@@ -1,6 +1,3 @@
-
-
-
 // Mobile Navigation
 
 const menuBtn = document.getElementById("menuBtn");
