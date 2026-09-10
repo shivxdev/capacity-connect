@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trainee Dashboard | Capacity Connect</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Existing Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <!-- Logo -->
+                <a href="../index.html" class="sidebar-logo">
+
+                    <div class="logo-icon">
+                        CC
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+
+                <!-- Navigation -->
+
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">MAIN</p>
+
+                    <a href="dashboard.html" class="nav-item active">
+                        <span class="nav-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▣</span>
+                        <span>Training Courses</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▶</span>
+                        <span>Learning Resources</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✓</span>
+                        <span>Assessments</span>
+                    </a>
+
+
+                    <p class="nav-title">MY DEVELOPMENT</p>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◔</span>
+                        <span>My Progress</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◇</span>
+                        <span>Certificates</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">♢</span>
+                        <span>Announcements</span>
+
+                        <span class="notification-count">
+                            3
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- Sidebar Bottom -->
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>
+                            Trainee
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <button class="logout-btn" id="logoutBtn">
+
+                    <span>
+                        ↪
+                    </span>
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button class="mobile-menu" id="mobileMenu">
+                        ☰
+                    </button>
+
+                    <div>
+
+                        <p class="header-label">
+                            TRAINEE PORTAL
+                        </p>
+
+                        <h1>
+                            My Learning Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <a href="#" class="header-notification">
+
+                        ♢
+
+                        <span></span>
+
+                    </a>
+
+
+                    <a href="#" class="header-profile">
+
+                        <div class="profile-avatar small">
+                            SK
+                        </div>
+
+                        <div>
+
+                            <strong id="headerUserName">
+                                Shivam Kumar
+                            </strong>
+
+                            <small>
+                                Trainee
+                            </small>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================= CONTENT ================= -->
+
+            <section class="dashboard-content">
+
+
+                <!-- WELCOME BANNER -->
+
+                <div class="welcome-banner">
+
+                    <div class="welcome-content">
+
+                        <span class="welcome-tag">
+                            DIGITAL CAPACITY BUILDING
+                        </span>
+
+                        <h2>
+                            Welcome back,
+                            <span id="welcomeName">
+                                Shivam
+                            </span> 👋
+                        </h2>
+
+                        <p>
+                            Continue your capacity development journey,
+                            explore training opportunities and strengthen
+                            your professional competencies.
+                        </p>
+
+                        <a href="#" class="primary-btn">
+
+                            Explore Training Courses
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="welcome-illustration">
+
+                        <div class="circle circle-one"></div>
+
+                        <div class="circle circle-two"></div>
+
+                        <div class="illustration-card">
+
+                            <span>
+                                CC
+                            </span>
+
+                            <strong>
+                                Build Capacity
+                            </strong>
+
+                            <small>
+                                Learn • Assess • Grow
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= STATS ================= -->
+
+                <div class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            ▣
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Enrolled Courses
+                            </span>
+
+                            <strong>
+                                06
+                            </strong>
+
+                            <small>
+                                2 currently active
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            ◔
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Overall Progress
+                            </span>
+
+                            <strong>
+                                68%
+                            </strong>
+
+                            <small>
+                                +8% this month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Assessments
+                            </span>
+
+                            <strong>
+                                04
+                            </strong>
+
+                            <small>
+                                3 completed
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ◇
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Certificates
+                            </span>
+
+                            <strong>
+                                02
+                            </strong>
+
+                            <small>
+                                Successfully earned
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= TOP GRID ================= -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- CONTINUE LEARNING -->
+
+                    <div class="dashboard-card continue-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    CONTINUE LEARNING
+                                </span>
+
+                                <h3>
+                                    Pick up where you left off
+                                </h3>
+
+                            </div>
+
+                            <a href="#">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <!-- Course 1 -->
+
+                        <div class="learning-item">
+
+                            <div class="course-icon weather">
+                                ☁
+                            </div>
+
+                            <div class="learning-details">
+
+                                <span class="course-category">
+                                    METEOROLOGICAL TRAINING
+                                </span>
+
+                                <h4>
+                                    Weather Observation & Forecasting
+                                </h4>
+
+                                <p>
+                                    Module 4 • Weather Data Analysis
+                                </p>
+
+                                <div class="progress-line">
+
+                                    <span style="width:72%;">
+                                    </span>
+
+                                </div>
+
+                                <div class="progress-info">
+
+                                    <span>
+                                        72% completed
+                                    </span>
+
+                                    <span>
+                                        3 of 5 modules
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="continue-btn">
+                                Continue
+                            </a>
+
+                        </div>
+
+
+                        <!-- Course 2 -->
+
+                        <div class="learning-item">
+
+                            <div class="course-icon climate">
+                                ♨
+                            </div>
+
+                            <div class="learning-details">
+
+                                <span class="course-category">
+                                    CLIMATE & ENVIRONMENT
+                                </span>
+
+                                <h4>
+                                    Climate Risk & Environmental Awareness
+                                </h4>
+
+                                <p>
+                                    Module 2 • Climate Risk Fundamentals
+                                </p>
+
+                                <div class="progress-line">
+
+                                    <span style="width:45%;">
+                                    </span>
+
+                                </div>
+
+                                <div class="progress-info">
+
+                                    <span>
+                                        45% completed
+                                    </span>
+
+                                    <span>
+                                        2 of 5 modules
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <a href="#" class="continue-btn">
+                                Continue
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- COMPETENCIES -->
+
+                    <div class="dashboard-card competency-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    COMPETENCY DEVELOPMENT
+                                </span>
+
+                                <h3>
+                                    My Competencies
+                                </h3>
+
+                            </div>
+
+                            <a href="#">
+                                Details
+                            </a>
+
+                        </div>
+
+
+                        <div class="competency">
+
+                            <div class="competency-top">
+
+                                <span>
+                                    Technical Competencies
+                                </span>
+
+                                <strong>
+                                    78%
+                                </strong>
+
+                            </div>
+
+                            <div class="competency-bar">
+
+                                <span style="width:78%;">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="competency">
+
+                            <div class="competency-top">
+
+                                <span>
+                                    Professional Skills
+                                </span>
+
+                                <strong>
+                                    65%
+                                </strong>
+
+                            </div>
+
+                            <div class="competency-bar">
+
+                                <span style="width:65%;">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="competency">
+
+                            <div class="competency-top">
+
+                                <span>
+                                    Leadership & Management
+                                </span>
+
+                                <strong>
+                                    52%
+                                </strong>
+
+                            </div>
+
+                            <div class="competency-bar">
+
+                                <span style="width:52%;">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="competency">
+
+                            <div class="competency-top">
+
+                                <span>
+                                    Organizational Capacity
+                                </span>
+
+                                <strong>
+                                    71%
+                                </strong>
+
+                            </div>
+
+                            <div class="competency-bar">
+
+                                <span style="width:71%;">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="#" class="competency-link">
+                            View competency analysis →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= LOWER GRID ================= -->
+
+                <div class="dashboard-grid lower-grid">
+
+
+                    <!-- RECOMMENDED TRAINING -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    RECOMMENDED FOR YOU
+                                </span>
+
+                                <h3>
+                                    Training Opportunities
+                                </h3>
+
+                            </div>
+
+                            <a href="#">
+                                Explore
+                            </a>
+
+                        </div>
+
+
+                        <div class="recommended-list">
+
+
+                            <div class="recommended-item">
+
+                                <div class="recommend-icon">
+                                    ◉
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        PROFESSIONAL SKILLS
+                                    </span>
+
+                                    <h4>
+                                        Effective Communication & Knowledge Sharing
+                                    </h4>
+
+                                    <p>
+                                        4 Modules • 2 Assessments
+                                    </p>
+
+                                </div>
+
+                                <a href="#">
+                                    →
+                                </a>
+
+                            </div>
+
+
+
+                            <div class="recommended-item">
+
+                                <div class="recommend-icon">
+                                    ◈
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        LEADERSHIP & MANAGEMENT
+                                    </span>
+
+                                    <h4>
+                                        Leadership for Organizational Development
+                                    </h4>
+
+                                    <p>
+                                        5 Modules • 3 Assessments
+                                    </p>
+
+                                </div>
+
+                                <a href="#">
+                                    →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ASSESSMENTS -->
+
+                    <div class="dashboard-card assessment-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    ASSESSMENTS
+                                </span>
+
+                                <h3>
+                                    Pending Assessments
+                                </h3>
+
+                            </div>
+
+                            <a href="#">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="assessment-item">
+
+                            <div class="assessment-number">
+                                01
+                            </div>
+
+                            <div class="assessment-info">
+
+                                <h4>
+                                    Weather Data Analysis
+                                </h4>
+
+                                <span>
+                                    Subject-wise MCQ Assessment
+                                </span>
+
+                            </div>
+
+                            <span class="pending-badge">
+                                Pending
+                            </span>
+
+                        </div>
+
+
+                        <div class="assessment-item">
+
+                            <div class="assessment-number">
+                                02
+                            </div>
+
+                            <div class="assessment-info">
+
+                                <h4>
+                                    Climate Risk Fundamentals
+                                </h4>
+
+                                <span>
+                                    Subject-wise MCQ Assessment
+                                </span>
+
+                            </div>
+
+                            <span class="pending-badge">
+                                Pending
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= ANNOUNCEMENTS ================= -->
+
+                <div class="dashboard-card announcements-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="section-label">
+                                UPDATES
+                            </span>
+
+                            <h3>
+                                Announcements & Notifications
+                            </h3>
+
+                        </div>
+
+                        <a href="#">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="announcement-list">
+
+
+                        <div class="announcement-item">
+
+                            <div class="announcement-icon">
+                                !
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    New Training Course Available
+                                </h4>
+
+                                <p>
+                                    A new Climate & Environmental Studies
+                                    training course has been added to the platform.
+                                </p>
+
+                                <small>
+                                    2 hours ago
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="announcement-item">
+
+                            <div class="announcement-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Assessment Reminder
+                                </h4>
+
+                                <p>
+                                    Complete your pending Weather Data Analysis
+                                    assessment to continue your training.
+                                </p>
+
+                                <small>
+                                    Yesterday
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="announcement-item">
+
+                            <div class="announcement-icon">
+                                ◇
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Training Certificate Earned
+                                </h4>
+
+                                <p>
+                                    Your certificate for Organizational Capacity
+                                    Building is now available.
+                                </p>
+
+                                <small>
+                                    3 days ago
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Trainee Dashboard JS -->
+    <script src="../js/trainee.js"></script>
+
+</body>
+
+</html>
