@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Training Courses | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/courses.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+
+                    <div class="logo-icon">CC</div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">MAIN</p>
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span class="nav-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="courses.html" class="nav-item active">
+                        <span class="nav-icon">▣</span>
+                        <span>Training Courses</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▶</span>
+                        <span>Learning Resources</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✓</span>
+                        <span>Assessments</span>
+                    </a>
+
+                    <p class="nav-title">MY DEVELOPMENT</p>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◔</span>
+                        <span>My Progress</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◇</span>
+                        <span>Certificates</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">♢</span>
+                        <span>Announcements</span>
+                        <span class="notification-count">3</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+                    </div>
+
+                    <span class="profile-arrow">›</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn">
+                    <span>↪</span>
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="dashboard-main">
+
+            <!-- HEADER -->
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button class="mobile-menu" id="mobileMenu">
+                        ☰
+                    </button>
+
+                    <div>
+                        <p class="header-label">
+                            TRAINEE PORTAL
+                        </p>
+
+                        <h1>
+                            Training Courses
+                        </h1>
+                    </div>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <a href="#" class="header-notification">
+                        ♢
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="header-profile">
+
+                        <div class="profile-avatar small">
+                            SK
+                        </div>
+
+                        <div>
+                            <strong id="headerUserName">
+                                Shivam Kumar
+                            </strong>
+
+                            <small>Trainee</small>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <section class="courses-content">
+
+                <!-- PAGE INTRO -->
+                <div class="courses-intro">
+
+                    <div>
+
+                        <span class="page-eyebrow">
+                            CAPACITY DEVELOPMENT
+                        </span>
+
+                        <h2>
+                            Explore Training Courses
+                        </h2>
+
+                        <p>
+                            Discover structured training programmes designed
+                            to strengthen technical competencies, professional
+                            skills and organizational capacity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SEARCH + FILTER -->
+                <div class="course-tools">
+
+                    <div class="search-box">
+
+                        <span>⌕</span>
+
+                        <input
+                            type="text"
+                            id="courseSearch"
+                            placeholder="Search training courses..."
+                        >
+
+                    </div>
+
+
+                    <div class="category-filter">
+
+                        <button
+                            class="filter-btn active"
+                            data-category="all">
+                            All Courses
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-category="meteorological">
+                            Meteorological
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-category="climate">
+                            Climate & Environment
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-category="technical">
+                            Technical
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-category="professional">
+                            Professional Skills
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE COUNT -->
+                <div class="courses-heading">
+
+                    <div>
+                        <span class="section-label">
+                            AVAILABLE PROGRAMMES
+                        </span>
+
+                        <h3>
+                            Training Opportunities
+                        </h3>
+                    </div>
+
+                    <span id="courseCount">
+                        6 Courses
+                    </span>
+
+                </div>
+
+
+                <!-- COURSES GRID -->
+                <div class="courses-grid" id="coursesGrid">
+
+
+                    <!-- COURSE 1 -->
+                    <article
+                        class="course-card"
+                        data-category="meteorological"
+                        data-title="Weather Observation Forecasting">
+
+                        <div class="course-cover meteorological-cover">
+
+                            <span class="course-cover-icon">
+                                ☁
+                            </span>
+
+                            <span class="course-status">
+                                ENROLLED
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                METEOROLOGICAL TRAINING
+                            </span>
+
+                            <h3>
+                                Weather Observation & Forecasting
+                            </h3>
+
+                            <p>
+                                Build practical understanding of weather
+                                observation, forecasting methods and
+                                meteorological data analysis.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 5 Modules</span>
+                                <span>✓ 3 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="mini-progress">
+
+                                    <div class="mini-progress-bar">
+                                        <span style="width:72%;"></span>
+                                    </div>
+
+                                    <small>
+                                        72% completed
+                                    </small>
+
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    Continue
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- COURSE 2 -->
+                    <article
+                        class="course-card"
+                        data-category="climate"
+                        data-title="Climate Risk Environmental Awareness">
+
+                        <div class="course-cover climate-cover">
+
+                            <span class="course-cover-icon">
+                                ♨
+                            </span>
+
+                            <span class="course-status">
+                                ENROLLED
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                CLIMATE & ENVIRONMENT
+                            </span>
+
+                            <h3>
+                                Climate Risk & Environmental Awareness
+                            </h3>
+
+                            <p>
+                                Understand climate risks, environmental
+                                challenges and approaches for sustainable
+                                organizational practices.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 5 Modules</span>
+                                <span>✓ 3 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="mini-progress">
+
+                                    <div class="mini-progress-bar">
+                                        <span style="width:45%;"></span>
+                                    </div>
+
+                                    <small>
+                                        45% completed
+                                    </small>
+
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    Continue
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- COURSE 3 -->
+                    <article
+                        class="course-card"
+                        data-category="technical"
+                        data-title="Technical Data Analysis">
+
+                        <div class="course-cover technical-cover">
+
+                            <span class="course-cover-icon">
+                                ◈
+                            </span>
+
+                            <span class="course-status new">
+                                NEW
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                TECHNICAL COMPETENCIES
+                            </span>
+
+                            <h3>
+                                Technical Data Analysis
+                            </h3>
+
+                            <p>
+                                Develop data interpretation and analytical
+                                skills required for informed technical
+                                decision-making.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 4 Modules</span>
+                                <span>✓ 2 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="course-level">
+                                    <span>Intermediate</span>
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    View Course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- COURSE 4 -->
+                    <article
+                        class="course-card"
+                        data-category="professional"
+                        data-title="Effective Communication Knowledge Sharing">
+
+                        <div class="course-cover professional-cover">
+
+                            <span class="course-cover-icon">
+                                ◉
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                PROFESSIONAL SKILLS
+                            </span>
+
+                            <h3>
+                                Effective Communication & Knowledge Sharing
+                            </h3>
+
+                            <p>
+                                Strengthen communication, collaboration and
+                                knowledge-sharing capabilities within teams.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 4 Modules</span>
+                                <span>✓ 2 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="course-level">
+                                    <span>Beginner</span>
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    View Course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- COURSE 5 -->
+                    <article
+                        class="course-card"
+                        data-category="professional"
+                        data-title="Leadership Organizational Development">
+
+                        <div class="course-cover leadership-cover">
+
+                            <span class="course-cover-icon">
+                                ◇
+                            </span>
+
+                            <span class="course-status recommended">
+                                RECOMMENDED
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                LEADERSHIP & MANAGEMENT
+                            </span>
+
+                            <h3>
+                                Leadership for Organizational Development
+                            </h3>
+
+                            <p>
+                                Develop leadership capabilities for effective
+                                organizational coordination and capacity building.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 5 Modules</span>
+                                <span>✓ 3 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="course-level">
+                                    <span>Intermediate</span>
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    View Course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- COURSE 6 -->
+                    <article
+                        class="course-card"
+                        data-category="technical"
+                        data-title="Organizational Capacity Building">
+
+                        <div class="course-cover capacity-cover">
+
+                            <span class="course-cover-icon">
+                                ✦
+                            </span>
+
+                        </div>
+
+                        <div class="course-body">
+
+                            <span class="course-type">
+                                ORGANIZATIONAL CAPACITY
+                            </span>
+
+                            <h3>
+                                Organizational Capacity Building
+                            </h3>
+
+                            <p>
+                                Learn frameworks and practices for strengthening
+                                institutional capability and workforce capacity.
+                            </p>
+
+                            <div class="course-meta">
+
+                                <span>◷ 6 Modules</span>
+                                <span>✓ 4 Assessments</span>
+
+                            </div>
+
+                            <div class="course-footer">
+
+                                <div class="course-level">
+                                    <span>Advanced</span>
+                                </div>
+
+                                <a href="#" class="course-action">
+                                    View Course
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- NO RESULTS -->
+                <div
+                    class="no-results"
+                    id="noResults">
+
+                    <div>
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No training courses found
+                    </h3>
+
+                    <p>
+                        Try another search term or select a different
+                        training category.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/courses.js"></script>
+
+</body>
+
+</html>
