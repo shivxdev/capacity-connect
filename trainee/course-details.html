@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Details | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/course-details.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+
+                    <div class="logo-icon">CC</div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">MAIN</p>
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span class="nav-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="courses.html" class="nav-item active">
+                        <span class="nav-icon">▣</span>
+                        <span>Training Courses</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">▶</span>
+                        <span>Learning Resources</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">✓</span>
+                        <span>Assessments</span>
+                    </a>
+
+                    <p class="nav-title">MY DEVELOPMENT</p>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◔</span>
+                        <span>My Progress</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◇</span>
+                        <span>Certificates</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">♢</span>
+                        <span>Announcements</span>
+                        <span class="notification-count">3</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+                    </div>
+
+                    <span class="profile-arrow">›</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn">
+                    <span>↪</span>
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-main">
+
+            <!-- HEADER -->
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button class="mobile-menu" id="mobileMenu">
+                        ☰
+                    </button>
+
+                    <div>
+                        <p class="header-label">
+                            TRAINEE PORTAL
+                        </p>
+
+                        <h1>
+                            Course Details
+                        </h1>
+                    </div>
+
+                </div>
+
+                <div class="header-right">
+
+                    <a href="#" class="header-notification">
+                        ♢
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="header-profile">
+
+                        <div class="profile-avatar small">
+                            SK
+                        </div>
+
+                        <div>
+                            <strong id="headerUserName">
+                                Shivam Kumar
+                            </strong>
+
+                            <small>Trainee</small>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- COURSE DETAILS -->
+            <section class="course-details-content">
+
+                <!-- BACK -->
+                <a href="courses.html" class="back-link">
+                    ← Back to Training Courses
+                </a>
+
+
+                <!-- HERO -->
+                <div class="course-detail-hero">
+
+                    <div class="hero-course-info">
+
+                        <span class="course-type">
+                            METEOROLOGICAL TRAINING
+                        </span>
+
+                        <h2>
+                            Weather Observation
+                            & Forecasting
+                        </h2>
+
+                        <p>
+                            Build practical understanding of weather
+                            observation, forecasting methods and
+                            meteorological data analysis through
+                            structured learning modules.
+                        </p>
+
+                        <div class="course-tags">
+
+                            <span>Intermediate</span>
+                            <span>5 Modules</span>
+                            <span>3 Assessments</span>
+                            <span>Training Certificate</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-visual">
+
+                        <div class="visual-circle">
+                            ☁
+                        </div>
+
+                        <span class="visual-text">
+                            CAPACITY<br>
+                            DEVELOPMENT
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN GRID -->
+                <div class="course-detail-grid">
+
+
+                    <!-- LEFT -->
+                    <div class="course-main">
+
+
+                        <!-- ABOUT -->
+                        <div class="detail-card">
+
+                            <div class="card-heading">
+
+                                <div>
+                                    <span class="small-label">
+                                        OVERVIEW
+                                    </span>
+
+                                    <h3>
+                                        About this training
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                            <p class="about-text">
+                                This training programme is designed to
+                                strengthen foundational and practical
+                                competencies related to weather
+                                observation and forecasting.
+                            </p>
+
+                            <p class="about-text">
+                                Trainees will work through structured
+                                learning resources, recorded lectures,
+                                practical knowledge activities and
+                                subject-wise MCQ assessments.
+                            </p>
+
+                        </div>
+
+
+                        <!-- LEARNING OUTCOMES -->
+                        <div class="detail-card">
+
+                            <div class="card-heading">
+
+                                <div>
+                                    <span class="small-label">
+                                        CAPACITY OUTCOMES
+                                    </span>
+
+                                    <h3>
+                                        What you will develop
+                                    </h3>
+                                </div>
+
+                            </div>
+
+                            <div class="outcomes-grid">
+
+                                <div class="outcome-item">
+                                    <span>✓</span>
+                                    <div>
+                                        <strong>
+                                            Observation Skills
+                                        </strong>
+
+                                        <p>
+                                            Understand core weather
+                                            observation practices.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="outcome-item">
+                                    <span>✓</span>
+                                    <div>
+                                        <strong>
+                                            Forecasting Knowledge
+                                        </strong>
+
+                                        <p>
+                                            Develop understanding of
+                                            forecasting techniques.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="outcome-item">
+                                    <span>✓</span>
+                                    <div>
+                                        <strong>
+                                            Data Interpretation
+                                        </strong>
+
+                                        <p>
+                                            Interpret meteorological
+                                            information effectively.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="outcome-item">
+                                    <span>✓</span>
+                                    <div>
+                                        <strong>
+                                            Technical Competency
+                                        </strong>
+
+                                        <p>
+                                            Strengthen relevant technical
+                                            competencies.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MODULES -->
+                        <div class="detail-card">
+
+                            <div class="card-heading">
+
+                                <div>
+                                    <span class="small-label">
+                                        TRAINING STRUCTURE
+                                    </span>
+
+                                    <h3>
+                                        Course Modules
+                                    </h3>
+                                </div>
+
+                                <span class="module-count">
+                                    5 Modules
+                                </span>
+
+                            </div>
+
+
+                            <div class="modules-list">
+
+                                <div class="module-item">
+
+                                    <div class="module-number">
+                                        01
+                                    </div>
+
+                                    <div class="module-info">
+
+                                        <strong>
+                                            Introduction to Weather Observation
+                                        </strong>
+
+                                        <p>
+                                            Basic concepts, observation
+                                            systems and data sources.
+                                        </p>
+
+                                    </div>
+
+                                    <span class="module-status">
+                                        Preview
+                                    </span>
+
+                                </div>
+
+
+                                <div class="module-item">
+
+                                    <div class="module-number">
+                                        02
+                                    </div>
+
+                                    <div class="module-info">
+
+                                        <strong>
+                                            Meteorological Instruments
+                                        </strong>
+
+                                        <p>
+                                            Understanding instruments and
+                                            measurement techniques.
+                                        </p>
+
+                                    </div>
+
+                                    <span class="module-lock">
+                                        🔒
+                                    </span>
+
+                                </div>
+
+
+                                <div class="module-item">
+
+                                    <div class="module-number">
+                                        03
+                                    </div>
+
+                                    <div class="module-info">
+
+                                        <strong>
+                                            Weather Data Analysis
+                                        </strong>
+
+                                        <p>
+                                            Reading and interpreting
+                                            meteorological observations.
+                                        </p>
+
+                                    </div>
+
+                                    <span class="module-lock">
+                                        🔒
+                                    </span>
+
+                                </div>
+
+
+                                <div class="module-item">
+
+                                    <div class="module-number">
+                                        04
+                                    </div>
+
+                                    <div class="module-info">
+
+                                        <strong>
+                                            Forecasting Methods
+                                        </strong>
+
+                                        <p>
+                                            Fundamentals of weather
+                                            forecasting approaches.
+                                        </p>
+
+                                    </div>
+
+                                    <span class="module-lock">
+                                        🔒
+                                    </span>
+
+                                </div>
+
+
+                                <div class="module-item">
+
+                                    <div class="module-number">
+                                        05
+                                    </div>
+
+                                    <div class="module-info">
+
+                                        <strong>
+                                            Assessment & Competency Check
+                                        </strong>
+
+                                        <p>
+                                            Evaluate your understanding
+                                            through MCQ assessment.
+                                        </p>
+
+                                    </div>
+
+                                    <span class="module-lock">
+                                        🔒
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT SIDEBAR -->
+                    <aside class="course-sidebar">
+
+
+                        <!-- ENROLL CARD -->
+                        <div class="enroll-card">
+
+                            <div class="enroll-icon">
+                                ✦
+                            </div>
+
+                            <h3>
+                                Start your training
+                            </h3>
+
+                            <p>
+                                Enroll in this programme to access
+                                all learning resources and assessments.
+                            </p>
+
+                            <button
+                                class="enroll-btn"
+                                id="enrollBtn">
+                                Enroll in Training
+                            </button>
+
+                            <div
+                                class="enroll-message"
+                                id="enrollMessage">
+                            </div>
+
+                        </div>
+
+
+                        <!-- COURSE INFO -->
+                        <div class="info-card">
+
+                            <span class="small-label">
+                                COURSE INFORMATION
+                            </span>
+
+                            <div class="info-row">
+
+                                <span>
+                                    Duration
+                                </span>
+
+                                <strong>
+                                    4 Weeks
+                                </strong>
+
+                            </div>
+
+                            <div class="info-row">
+
+                                <span>
+                                    Modules
+                                </span>
+
+                                <strong>
+                                    5
+                                </strong>
+
+                            </div>
+
+                            <div class="info-row">
+
+                                <span>
+                                    Assessments
+                                </span>
+
+                                <strong>
+                                    3
+                                </strong>
+
+                            </div>
+
+                            <div class="info-row">
+
+                                <span>
+                                    Level
+                                </span>
+
+                                <strong>
+                                    Intermediate
+                                </strong>
+
+                            </div>
+
+                            <div class="info-row">
+
+                                <span>
+                                    Certificate
+                                </span>
+
+                                <strong>
+                                    Included
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TRAINER -->
+                        <div class="trainer-card">
+
+                            <span class="small-label">
+                                TRAINER
+                            </span>
+
+                            <div class="trainer-profile">
+
+                                <div class="trainer-avatar">
+                                    TM
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Training Mentor
+                                    </strong>
+
+                                    <span>
+                                        Meteorological Training
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/course-details.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,764 @@
+/* =========================================
+   CAPACITY CONNECT
+   COURSE DETAILS
+========================================= */
+
+.course-details-content {
+    padding: 28px 38px 60px;
+    max-width: 1450px;
+}
+
+
+/* =========================================
+   BACK LINK
+========================================= */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #7562a0;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #6849d6;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.course-detail-hero {
+    min-height: 245px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        110deg,
+        #eeeaff,
+        #f6f3ff
+    );
+
+    border: 1px solid #e2dcf1;
+
+    padding: 35px 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    position: relative;
+
+    margin-bottom: 25px;
+}
+
+.hero-course-info {
+    max-width: 720px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.course-type {
+    font-size: 8px;
+
+    letter-spacing: 1.4px;
+
+    font-weight: 800;
+
+    color: #8064c1;
+}
+
+.hero-course-info h2 {
+    font-family: "Playfair Display", serif;
+
+    color: #312b42;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin: 9px 0 12px;
+}
+
+.hero-course-info p {
+    color: #7e778b;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: 0 0 18px;
+}
+
+.course-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.course-tags span {
+    background: rgba(255,255,255,.8);
+
+    border: 1px solid #ddd5ee;
+
+    color: #756b87;
+
+    padding: 7px 10px;
+
+    border-radius: 7px;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+    width: 230px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.visual-circle {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 35px;
+
+    background: rgba(255,255,255,.75);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 50px;
+
+    box-shadow:
+        0 18px 40px rgba(77,61,126,.08);
+}
+
+.visual-text {
+    margin-top: 10px;
+
+    text-align: center;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.5;
+
+    color: #9a8db5;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.course-detail-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 300px;
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   DETAIL CARD
+========================================= */
+
+.detail-card {
+    background: #ffffff;
+
+    border: 1px solid #e8e4ee;
+
+    border-radius: 16px;
+
+    padding: 23px;
+
+    margin-bottom: 20px;
+}
+
+.card-heading {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.small-label {
+    display: block;
+
+    font-size: 7px;
+
+    letter-spacing: 1.2px;
+
+    font-weight: 800;
+
+    color: #9681bd;
+}
+
+.card-heading h3 {
+    margin: 5px 0 0;
+
+    font-size: 17px;
+
+    color: #363143;
+}
+
+.about-text {
+    color: #85808f;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    margin: 0 0 10px;
+
+    max-width: 850px;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   OUTCOMES
+========================================= */
+
+.outcomes-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 13px;
+}
+
+.outcome-item {
+    display: flex;
+
+    gap: 11px;
+
+    padding: 13px;
+
+    background: #faf9fc;
+
+    border-radius: 10px;
+
+    border: 1px solid #eeeaf3;
+}
+
+.outcome-item > span {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eee9ff;
+
+    color: #7152dc;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.outcome-item strong {
+    display: block;
+
+    font-size: 9px;
+
+    color: #464052;
+
+    margin-bottom: 4px;
+}
+
+.outcome-item p {
+    margin: 0;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+
+    color: #98929f;
+}
+
+
+/* =========================================
+   MODULES
+========================================= */
+
+.module-count {
+    padding: 6px 9px;
+
+    border-radius: 6px;
+
+    background: #f3f0f8;
+
+    color: #82798e;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+.modules-list {
+    border-top: 1px solid #efedf2;
+}
+
+.module-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #efedf2;
+}
+
+.module-item:last-child {
+    border-bottom: none;
+}
+
+.module-number {
+    width: 37px;
+    height: 37px;
+
+    border-radius: 9px;
+
+    background: #f0edfa;
+
+    color: #7557d3;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    flex-shrink: 0;
+}
+
+.module-info {
+    flex: 1;
+}
+
+.module-info strong {
+    display: block;
+
+    color: #454050;
+
+    font-size: 10px;
+
+    margin-bottom: 4px;
+}
+
+.module-info p {
+    margin: 0;
+
+    color: #9a95a1;
+
+    font-size: 8px;
+}
+
+.module-status {
+    padding: 5px 8px;
+
+    border-radius: 5px;
+
+    background: #edf8f2;
+
+    color: #438c68;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.module-lock {
+    font-size: 10px;
+
+    opacity: .55;
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+========================================= */
+
+.course-sidebar {
+    position: sticky;
+
+    top: 20px;
+}
+
+
+/* =========================================
+   ENROLL CARD
+========================================= */
+
+.enroll-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e0ed;
+
+    border-radius: 16px;
+
+    padding: 23px;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 30px rgba(65,51,105,.05);
+}
+
+.enroll-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: #eee9ff;
+
+    color: #6f50dc;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 12px;
+
+    font-size: 20px;
+}
+
+.enroll-card h3 {
+    margin: 0 0 7px;
+
+    color: #393344;
+
+    font-size: 15px;
+}
+
+.enroll-card p {
+    margin: 0 auto 17px;
+
+    max-width: 220px;
+
+    color: #99939f;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+}
+
+.enroll-btn {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #7151e4;
+
+    color: white;
+
+    padding: 11px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.enroll-btn:hover {
+    background: #6040d1;
+
+    transform: translateY(-1px);
+}
+
+.enroll-btn.enrolled {
+    background: #4a9a71;
+}
+
+.enroll-message {
+    min-height: 13px;
+
+    margin-top: 9px;
+
+    color: #4a9a71;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   INFO CARD
+========================================= */
+
+.info-card {
+    background: #ffffff;
+
+    border: 1px solid #e8e4ee;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+}
+
+.info-card > .small-label {
+    margin-bottom: 10px;
+}
+
+.info-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #f0edf3;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.info-row span {
+    color: #9a94a2;
+
+    font-size: 8px;
+}
+
+.info-row strong {
+    color: #514a5d;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   TRAINER CARD
+========================================= */
+
+.trainer-card {
+    background: #ffffff;
+
+    border: 1px solid #e8e4ee;
+
+    border-radius: 16px;
+
+    padding: 20px;
+}
+
+.trainer-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-top: 12px;
+}
+
+.trainer-avatar {
+    width: 39px;
+    height: 39px;
+
+    border-radius: 10px;
+
+    background: #eee9ff;
+
+    color: #7151d9;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+.trainer-profile strong {
+    display: block;
+
+    color: #484153;
+
+    font-size: 9px;
+
+    margin-bottom: 4px;
+}
+
+.trainer-profile span {
+    display: block;
+
+    color: #9b95a2;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .course-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-sidebar {
+        position: static;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 18px;
+    }
+
+    .enroll-card,
+    .info-card,
+    .trainer-card {
+        margin-bottom: 0;
+    }
+
+    .trainer-card {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .course-details-content {
+        padding: 22px 18px 45px;
+    }
+
+    .course-detail-hero {
+        padding: 27px;
+
+        min-height: auto;
+    }
+
+    .hero-course-info h2 {
+        font-size: 27px;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .course-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-card {
+        grid-column: auto;
+    }
+
+    .course-detail-hero {
+        padding: 23px;
+    }
+
+    .hero-course-info h2 {
+        font-size: 24px;
+    }
+
+    .module-item {
+        align-items: flex-start;
+    }
+
+    .module-status,
+    .module-lock {
+        display: none;
+    }
+
+}
