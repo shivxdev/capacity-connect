@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assessment | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/assessments.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+
+                    <div class="logo-icon">CC</div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">MAIN</p>
+
+                    <a href="dashboard.html" class="nav-item">
+                        <span class="nav-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="courses.html" class="nav-item">
+                        <span class="nav-icon">▣</span>
+                        <span>Training Courses</span>
+                    </a>
+
+                    <a href="learning.html" class="nav-item">
+                        <span class="nav-icon">▶</span>
+                        <span>Learning Resources</span>
+                    </a>
+
+                    <a href="assessments.html" class="nav-item active">
+                        <span class="nav-icon">✓</span>
+                        <span>Assessments</span>
+                    </a>
+
+                    <p class="nav-title">MY DEVELOPMENT</p>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◔</span>
+                        <span>My Progress</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">◇</span>
+                        <span>Certificates</span>
+                    </a>
+
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">♢</span>
+                        <span>Announcements</span>
+                        <span class="notification-count">3</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+
+                    </div>
+
+                    <span class="profile-arrow">›</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn">
+                    <span>↪</span>
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN -->
+        <main class="dashboard-main">
+
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button class="mobile-menu" id="mobileMenu">
+                        ☰
+                    </button>
+
+                    <div>
+
+                        <p class="header-label">
+                            TRAINEE PORTAL
+                        </p>
+
+                        <h1>
+                            MCQ Assessment
+                        </h1>
+
+                    </div>
+
+                </div>
+
+                <div class="header-right">
+
+                    <a href="#" class="header-notification">
+                        ♢
+                        <span></span>
+                    </a>
+
+                    <a href="#" class="header-profile">
+
+                        <div class="profile-avatar small">
+                            SK
+                        </div>
+
+                        <div>
+
+                            <strong id="headerUserName">
+                                Shivam Kumar
+                            </strong>
+
+                            <small>Trainee</small>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- ASSESSMENT -->
+            <section class="assessment-content">
+
+                <a href="learning.html" class="back-link">
+                    ← Back to Learning Resources
+                </a>
+
+
+                <!-- ASSESSMENT HEADER -->
+                <div class="assessment-header">
+
+                    <div>
+
+                        <span class="assessment-label">
+                            SUBJECT-WISE MCQ ASSESSMENT
+                        </span>
+
+                        <h2>
+                            Weather Observation
+                            & Forecasting
+                        </h2>
+
+                        <p>
+                            Module 04 · Forecasting Methods
+                        </p>
+
+                    </div>
+
+                    <div class="assessment-meta">
+
+                        <div class="meta-box">
+
+                            <strong>
+                                10
+                            </strong>
+
+                            <span>
+                                Questions
+                            </span>
+
+                        </div>
+
+                        <div class="meta-box">
+
+                            <strong>
+                                15
+                            </strong>
+
+                            <span>
+                                Minutes
+                            </span>
+
+                        </div>
+
+                        <div class="meta-box">
+
+                            <strong>
+                                70%
+                            </strong>
+
+                            <span>
+                                Pass Mark
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ASSESSMENT BODY -->
+                <div class="assessment-layout">
+
+
+                    <!-- QUESTIONS -->
+                    <div class="questions-area">
+
+                        <div class="question-card">
+
+                            <div class="question-top">
+
+                                <span>
+                                    QUESTION <b id="questionNumber">1</b> OF 10
+                                </span>
+
+                                <span class="question-topic">
+                                    Forecasting Basics
+                                </span>
+
+                            </div>
+
+                            <h3 id="questionText">
+                                What is the primary purpose of weather forecasting?
+                            </h3>
+
+
+                            <div class="options" id="optionsContainer">
+
+                                <!-- JS OPTIONS -->
+
+                            </div>
+
+
+                            <div class="question-navigation">
+
+                                <button
+                                    class="previous-btn"
+                                    id="previousBtn"
+                                    disabled>
+
+                                    ← Previous
+
+                                </button>
+
+                                <span id="questionProgress">
+                                    1 / 10
+                                </span>
+
+                                <button
+                                    class="next-btn"
+                                    id="nextBtn">
+
+                                    Next →
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- INSTRUCTIONS -->
+                        <div class="instructions-card">
+
+                            <span class="small-label">
+                                ASSESSMENT GUIDELINES
+                            </span>
+
+                            <ul>
+
+                                <li>
+                                    Select one answer for each question.
+                                </li>
+
+                                <li>
+                                    You can navigate between questions.
+                                </li>
+
+                                <li>
+                                    The assessment requires 70% to pass.
+                                </li>
+
+                                <li>
+                                    Submit the assessment before the timer ends.
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT -->
+                    <aside class="assessment-sidebar">
+
+
+                        <!-- TIMER -->
+                        <div class="timer-card">
+
+                            <span class="small-label">
+                                TIME REMAINING
+                            </span>
+
+                            <div class="timer" id="timer">
+                                15:00
+                            </div>
+
+                            <div class="timer-bar">
+                                <span id="timerBar"></span>
+                            </div>
+
+                            <p>
+                                Please complete the assessment
+                                within the allotted time.
+                            </p>
+
+                        </div>
+
+
+                        <!-- QUESTION NAV -->
+                        <div class="question-map">
+
+                            <div class="map-heading">
+
+                                <span class="small-label">
+                                    QUESTIONS
+                                </span>
+
+                                <span id="answeredCount">
+                                    0 / 10 answered
+                                </span>
+
+                            </div>
+
+                            <div
+                                class="question-numbers"
+                                id="questionNumbers">
+
+                                <!-- JS -->
+
+                            </div>
+
+                            <div class="map-legend">
+
+                                <span>
+                                    <i class="current-dot"></i>
+                                    Current
+                                </span>
+
+                                <span>
+                                    <i class="answered-dot"></i>
+                                    Answered
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <div class="submit-card">
+
+                            <h3>
+                                Ready to submit?
+                            </h3>
+
+                            <p>
+                                Make sure you have reviewed
+                                all your answers.
+                            </p>
+
+                            <button
+                                class="submit-btn"
+                                id="submitBtn">
+
+                                Submit Assessment
+
+                            </button>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- RESULT MODAL -->
+
+    <div class="result-overlay" id="resultOverlay">
+
+        <div class="result-modal">
+
+            <div class="result-icon" id="resultIcon">
+                ✓
+            </div>
+
+            <span class="result-label">
+                ASSESSMENT COMPLETED
+            </span>
+
+            <h2 id="resultTitle">
+                Assessment Result
+            </h2>
+
+            <p id="resultDescription">
+                Your assessment has been evaluated.
+            </p>
+
+            <div class="result-score">
+
+                <strong id="scoreValue">
+                    0%
+                </strong>
+
+                <span>
+                    Final Score
+                </span>
+
+            </div>
+
+            <div class="result-details">
+
+                <div>
+                    <strong id="correctCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Correct
+                    </span>
+                </div>
+
+                <div>
+                    <strong id="wrongCount">
+                        0
+                    </strong>
+
+                    <span>
+                        Incorrect
+                    </span>
+                </div>
+
+                <div>
+                    <strong id="resultStatus">
+                        —
+                    </strong>
+
+                    <span>
+                        Status
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="result-actions">
+
+                <button
+                    class="result-primary"
+                    id="continueBtn">
+
+                    Continue
+
+                </button>
+
+                <button
+                    class="result-secondary"
+                    id="retryBtn">
+
+                    Retry Assessment
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/assessments.js"></script>
+
+</body>
+
+</html>

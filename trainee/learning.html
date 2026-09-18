@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/learning.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- ================================
+             SIDEBAR
+        ================================= -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="../index.html" class="sidebar-logo">
+
+                    <div class="logo-icon">
+                        CC
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">
+                        MAIN
+                    </p>
+
+                    <a href="dashboard.html" class="nav-item">
+
+                        <span class="nav-icon">⌂</span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a href="courses.html" class="nav-item active">
+
+                        <span class="nav-icon">▣</span>
+
+                        <span>
+                            Training Courses
+                        </span>
+
+                    </a>
+
+
+                    <a href="learning.html" class="nav-item active">
+
+                        <span class="nav-icon">▶</span>
+
+                        <span>
+                            Learning Resources
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="nav-item">
+
+                        <span class="nav-icon">✓</span>
+
+                        <span>
+                            Assessments
+                        </span>
+
+                    </a>
+
+
+                    <p class="nav-title">
+                        MY DEVELOPMENT
+                    </p>
+
+
+                    <a href="#" class="nav-item">
+
+                        <span class="nav-icon">◔</span>
+
+                        <span>
+                            My Progress
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="nav-item">
+
+                        <span class="nav-icon">◇</span>
+
+                        <span>
+                            Certificates
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="nav-item">
+
+                        <span class="nav-icon">♢</span>
+
+                        <span>
+                            Announcements
+                        </span>
+
+                        <span class="notification-count">
+                            3
+                        </span>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>
+                            Trainee
+                        </span>
+
+                    </div>
+
+                    <span class="profile-arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <button
+                    class="logout-btn"
+                    id="logoutBtn">
+
+                    <span>↪</span>
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- ================================
+             MAIN
+        ================================= -->
+
+        <main class="dashboard-main">
+
+
+            <!-- HEADER -->
+
+            <header class="dashboard-header">
+
+                <div class="header-left">
+
+                    <button
+                        class="mobile-menu"
+                        id="mobileMenu">
+
+                        ☰
+
+                    </button>
+
+
+                    <div>
+
+                        <p class="header-label">
+                            TRAINEE PORTAL
+                        </p>
+
+                        <h1>
+                            Learning Resources
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-right">
+
+                    <a
+                        href="#"
+                        class="header-notification">
+
+                        ♢
+
+                        <span></span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="header-profile">
+
+                        <div class="profile-avatar small">
+                            SK
+                        </div>
+
+                        <div>
+
+                            <strong id="headerUserName">
+                                Shivam Kumar
+                            </strong>
+
+                            <small>
+                                Trainee
+                            </small>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================================
+                 LEARNING CONTENT
+            ================================= -->
+
+            <section class="learning-content">
+
+
+                <!-- BACK -->
+
+                <a
+                    href="courses.html"
+                    class="learning-back">
+
+                    ← Training Courses
+
+                </a>
+
+
+                <!-- COURSE TOP -->
+
+                <div class="learning-top">
+
+                    <div>
+
+                        <span class="learning-eyebrow">
+                            CURRENT TRAINING
+                        </span>
+
+                        <h2>
+                            Weather Observation
+                            & Forecasting
+                        </h2>
+
+                        <p>
+                            Continue your structured learning journey
+                            through recorded lectures, presentations,
+                            study materials and competency activities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="overall-progress">
+
+                        <div class="progress-circle">
+
+                            <span>
+                                72%
+                            </span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Training Progress
+                            </strong>
+
+                            <small>
+                                3 of 5 modules completed
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIN LEARNING GRID -->
+
+                <div class="learning-grid">
+
+
+                    <!-- LEFT CONTENT -->
+
+                    <div class="learning-main">
+
+
+                        <!-- CURRENT MODULE -->
+
+                        <div class="learning-card">
+
+                            <div class="learning-card-heading">
+
+                                <div>
+
+                                    <span class="small-label">
+                                        MODULE 04
+                                    </span>
+
+                                    <h3>
+                                        Forecasting Methods
+                                    </h3>
+
+                                </div>
+
+                                <span class="module-badge">
+                                    IN PROGRESS
+                                </span>
+
+                            </div>
+
+
+                            <!-- VIDEO AREA -->
+
+                            <div class="lecture-player">
+
+                                <div class="player-overlay">
+
+                                    <div class="play-button"
+                                        id="playLecture">
+
+                                        ▶
+
+                                    </div>
+
+                                    <span>
+                                        Recorded Lecture
+                                    </span>
+
+                                </div>
+
+                                <div class="player-decoration">
+                                    WEATHER
+                                </div>
+
+                            </div>
+
+
+                            <div class="lecture-info">
+
+                                <div>
+
+                                    <h3>
+                                        Fundamentals of Weather Forecasting
+                                    </h3>
+
+                                    <p>
+                                        Recorded Lecture · 24 minutes
+                                    </p>
+
+                                </div>
+
+                                <button
+                                    class="complete-btn"
+                                    id="completeLecture">
+
+                                    Mark as Completed
+
+                                </button>
+
+                            </div>
+
+                            <div
+                                class="lecture-message"
+                                id="lectureMessage">
+                            </div>
+
+                        </div>
+
+
+                        <!-- STUDY MATERIALS -->
+
+                        <div class="learning-card">
+
+                            <div class="learning-card-heading">
+
+                                <div>
+
+                                    <span class="small-label">
+                                        LEARNING RESOURCES
+                                    </span>
+
+                                    <h3>
+                                        Presentations & Study Materials
+                                    </h3>
+
+                                </div>
+
+                                <span class="resource-count">
+                                    4 Resources
+                                </span>
+
+                            </div>
+
+
+                            <div class="resource-list">
+
+
+                                <div class="resource-item">
+
+                                    <div class="resource-icon presentation">
+                                        PPT
+                                    </div>
+
+                                    <div class="resource-info">
+
+                                        <strong>
+                                            Weather Forecasting Fundamentals
+                                        </strong>
+
+                                        <span>
+                                            Presentation · 18 slides
+                                        </span>
+
+                                    </div>
+
+                                    <button class="resource-btn">
+                                        View
+                                    </button>
+
+                                </div>
+
+
+                                <div class="resource-item">
+
+                                    <div class="resource-icon pdf">
+                                        PDF
+                                    </div>
+
+                                    <div class="resource-info">
+
+                                        <strong>
+                                            Forecasting Methods — Study Guide
+                                        </strong>
+
+                                        <span>
+                                            Study Material · 12 pages
+                                        </span>
+
+                                    </div>
+
+                                    <button class="resource-btn">
+                                        View
+                                    </button>
+
+                                </div>
+
+
+                                <div class="resource-item">
+
+                                    <div class="resource-icon notes">
+                                        DOC
+                                    </div>
+
+                                    <div class="resource-info">
+
+                                        <strong>
+                                            Observation & Forecasting Notes
+                                        </strong>
+
+                                        <span>
+                                            Reference Notes · 8 pages
+                                        </span>
+
+                                    </div>
+
+                                    <button class="resource-btn">
+                                        View
+                                    </button>
+
+                                </div>
+
+
+                                <div class="resource-item">
+
+                                    <div class="resource-icon video">
+                                        ▶
+                                    </div>
+
+                                    <div class="resource-info">
+
+                                        <strong>
+                                            Practical Forecasting Demonstration
+                                        </strong>
+
+                                        <span>
+                                            Recorded Lecture · 16 minutes
+                                        </span>
+
+                                    </div>
+
+                                    <button class="resource-btn">
+                                        Watch
+                                    </button>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MODULE DESCRIPTION -->
+
+                        <div class="learning-card">
+
+                            <div class="learning-card-heading">
+
+                                <div>
+
+                                    <span class="small-label">
+                                        MODULE OVERVIEW
+                                    </span>
+
+                                    <h3>
+                                        About this module
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <p class="module-description">
+
+                                This module introduces fundamental
+                                approaches used for weather forecasting.
+                                Trainees will understand forecasting
+                                concepts, interpret relevant observations
+                                and develop practical knowledge required
+                                for technical competency.
+
+                            </p>
+
+
+                            <div class="module-objectives">
+
+                                <div>
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Understand basic forecasting
+                                        approaches
+                                    </p>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Interpret weather observations
+                                    </p>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>✓</span>
+
+                                    <p>
+                                        Apply forecasting concepts
+                                        in practical situations
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT MODULE LIST -->
+
+                    <aside class="learning-sidebar">
+
+
+                        <div class="modules-card">
+
+                            <div class="modules-header">
+
+                                <div>
+
+                                    <span class="small-label">
+                                        COURSE CONTENT
+                                    </span>
+
+                                    <h3>
+                                        Modules
+                                    </h3>
+
+                                </div>
+
+                                <span>
+                                    3/5
+                                </span>
+
+                            </div>
+
+
+                            <div class="learning-modules">
+
+
+                                <button
+                                    class="learning-module completed">
+
+                                    <div class="module-icon">
+                                        ✓
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Introduction to Weather
+                                            Observation
+                                        </strong>
+
+                                        <small>
+                                            Completed
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+                                <button
+                                    class="learning-module completed">
+
+                                    <div class="module-icon">
+                                        ✓
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Meteorological Instruments
+                                        </strong>
+
+                                        <small>
+                                            Completed
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+                                <button
+                                    class="learning-module completed">
+
+                                    <div class="module-icon">
+                                        ✓
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Weather Data Analysis
+                                        </strong>
+
+                                        <small>
+                                            Completed
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+                                <button
+                                    class="learning-module current">
+
+                                    <div class="module-icon">
+                                        04
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Forecasting Methods
+                                        </strong>
+
+                                        <small>
+                                            In Progress
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+
+                                <button
+                                    class="learning-module locked">
+
+                                    <div class="module-icon">
+                                        🔒
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Assessment & Competency Check
+                                        </strong>
+
+                                        <small>
+                                            Locked
+                                        </small>
+
+                                    </div>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- NEXT STEP -->
+
+                        <div class="next-step-card">
+
+                            <span class="small-label">
+                                NEXT STEP
+                            </span>
+
+                            <h3>
+                                Complete the module
+                            </h3>
+
+                            <p>
+                                Finish the recorded lecture and
+                                review the learning resources before
+                                attempting the assessment.
+                            </p>
+
+                            <a href="assessments.html"
+                               class="assessment-link">
+
+                                Go to Assessment
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/learning.js"></script>
+
+</body>
+
+</html>
