@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progress | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/progress.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-mark">C</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Training Courses</span>
+            </a>
+
+            <a href="progress.html" class="nav-item active">
+                <span class="nav-icon">◔</span>
+                <span>My Progress</span>
+            </a>
+
+            <a href="assessments.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Assessments</span>
+            </a>
+
+            <a href="certificates.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Certificates</span>
+            </a>
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+                <div class="help-icon">?</div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Contact support</span>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+                <h1>My Progress</h1>
+                <p>Track your training participation and competency development.</p>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="icon-btn" title="Notifications">
+                    ♢
+                    <span class="header-dot"></span>
+                </button>
+
+                <div class="user-profile">
+
+                    <div class="user-avatar" id="userAvatar">
+                        S
+                    </div>
+
+                    <div class="user-info">
+                        <strong id="userName">Shivam Kumar</strong>
+                        <span>Trainee</span>
+                    </div>
+
+                    <span class="profile-arrow">⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="progress-page">
+
+            <!-- OVERVIEW -->
+            <div class="progress-overview">
+
+                <div class="overview-card main-progress-card">
+
+                    <div class="card-top">
+
+                        <div>
+                            <span class="section-tag">OVERALL PARTICIPATION</span>
+                            <h2>Training Progress</h2>
+                        </div>
+
+                        <div class="progress-circle" id="overallCircle">
+                            <div>
+                                <strong id="overallProgress">68%</strong>
+                                <span>Complete</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="overall-details">
+
+                        <div class="detail-item">
+                            <span>Training Courses</span>
+                            <strong>4</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>Completed</span>
+                            <strong>1</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>In Progress</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div class="detail-item">
+                            <span>Assessments</span>
+                            <strong id="assessmentCount">1</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="overview-card competency-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <span class="section-tag">COMPETENCY DEVELOPMENT</span>
+                            <h2>Competency Profile</h2>
+                        </div>
+
+                        <span class="competency-icon">✦</span>
+                    </div>
+
+                    <p class="card-description">
+                        Your competency development based on training participation and assessments.
+                    </p>
+
+                    <div class="competency-progress">
+
+                        <div class="competency-row">
+                            <div>
+                                <span>Technical Competencies</span>
+                                <strong>72%</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width:72%"></span>
+                            </div>
+                        </div>
+
+                        <div class="competency-row">
+                            <div>
+                                <span>Professional Skills</span>
+                                <strong>61%</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width:61%"></span>
+                            </div>
+                        </div>
+
+                        <div class="competency-row">
+                            <div>
+                                <span>Leadership & Management</span>
+                                <strong>48%</strong>
+                            </div>
+
+                            <div class="mini-progress">
+                                <span style="width:48%"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE PROGRESS -->
+            <div class="section-header">
+
+                <div>
+                    <span class="section-tag">TRAINING PARTICIPATION</span>
+                    <h2>Course Progress</h2>
+                    <p>Monitor your progress across enrolled training courses.</p>
+                </div>
+
+                <a href="courses.html" class="outline-btn">
+                    Explore Courses →
+                </a>
+
+            </div>
+
+
+            <div class="course-progress-grid">
+
+                <!-- COURSE 1 -->
+                <div class="course-progress-card">
+
+                    <div class="course-card-top">
+
+                        <div class="course-mini-icon weather-icon">
+                            ☁
+                        </div>
+
+                        <span class="status-badge active-status">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <h3>Weather Observation & Forecasting</h3>
+
+                    <p class="course-meta">
+                        Meteorological Training
+                    </p>
+
+                    <div class="course-progress-info">
+                        <span>68% completed</span>
+                        <strong>68%</strong>
+                    </div>
+
+                    <div class="course-progress-bar">
+                        <span style="width:68%"></span>
+                    </div>
+
+                    <div class="course-footer">
+                        <span>4 of 6 modules</span>
+
+                        <a href="learning.html">
+                            Continue →
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 2 -->
+                <div class="course-progress-card">
+
+                    <div class="course-card-top">
+
+                        <div class="course-mini-icon climate-icon">
+                            ◌
+                        </div>
+
+                        <span class="status-badge active-status">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <h3>Climate Risk & Environmental Awareness</h3>
+
+                    <p class="course-meta">
+                        Climate & Environmental Studies
+                    </p>
+
+                    <div class="course-progress-info">
+                        <span>45% completed</span>
+                        <strong>45%</strong>
+                    </div>
+
+                    <div class="course-progress-bar">
+                        <span style="width:45%"></span>
+                    </div>
+
+                    <div class="course-footer">
+                        <span>3 of 7 modules</span>
+
+                        <a href="course-details.html">
+                            Continue →
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 3 -->
+                <div class="course-progress-card">
+
+                    <div class="course-card-top">
+
+                        <div class="course-mini-icon leadership-icon">
+                            ◈
+                        </div>
+
+                        <span class="status-badge active-status">
+                            In Progress
+                        </span>
+
+                    </div>
+
+                    <h3>Leadership & Organizational Development</h3>
+
+                    <p class="course-meta">
+                        Leadership & Management
+                    </p>
+
+                    <div class="course-progress-info">
+                        <span>32% completed</span>
+                        <strong>32%</strong>
+                    </div>
+
+                    <div class="course-progress-bar">
+                        <span style="width:32%"></span>
+                    </div>
+
+                    <div class="course-footer">
+                        <span>2 of 6 modules</span>
+
+                        <a href="course-details.html">
+                            Continue →
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- COURSE 4 -->
+                <div class="course-progress-card completed-course">
+
+                    <div class="course-card-top">
+
+                        <div class="course-mini-icon professional-icon">
+                            ✓
+                        </div>
+
+                        <span class="status-badge completed-status">
+                            Completed
+                        </span>
+
+                    </div>
+
+                    <h3>Professional Communication Skills</h3>
+
+                    <p class="course-meta">
+                        Professional Skills
+                    </p>
+
+                    <div class="course-progress-info">
+                        <span>100% completed</span>
+                        <strong>100%</strong>
+                    </div>
+
+                    <div class="course-progress-bar">
+                        <span style="width:100%"></span>
+                    </div>
+
+                    <div class="course-footer">
+                        <span>6 of 6 modules</span>
+
+                        <a href="certificates.html">
+                            View Certificate →
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOWER SECTION -->
+            <div class="progress-lower-grid">
+
+                <!-- RECENT ACTIVITY -->
+                <div class="activity-card">
+
+                    <div class="section-card-header">
+
+                        <div>
+                            <span class="section-tag">RECENT ACTIVITY</span>
+                            <h2>Training Activity</h2>
+                        </div>
+
+                        <span class="activity-count">This Week</span>
+
+                    </div>
+
+                    <div class="activity-list">
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon lecture">
+                                ▶
+                            </div>
+
+                            <div class="activity-content">
+                                <strong>Recorded Lecture completed</strong>
+                                <span>Forecasting Methods · Module 04</span>
+                            </div>
+
+                            <small>Today</small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon assessment">
+                                ✓
+                            </div>
+
+                            <div class="activity-content">
+                                <strong>MCQ Assessment attempted</strong>
+                                <span>Weather Observation & Forecasting</span>
+                            </div>
+
+                            <small>Yesterday</small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon resource">
+                                ▤
+                            </div>
+
+                            <div class="activity-content">
+                                <strong>Study Material viewed</strong>
+                                <span>Climate Risk Fundamentals</span>
+                            </div>
+
+                            <small>2 days ago</small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon enrollment">
+                                +
+                            </div>
+
+                            <div class="activity-content">
+                                <strong>Joined training course</strong>
+                                <span>Leadership & Organizational Development</span>
+                            </div>
+
+                            <small>4 days ago</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ASSESSMENT PERFORMANCE -->
+                <div class="assessment-performance-card">
+
+                    <div class="section-card-header">
+
+                        <div>
+                            <span class="section-tag">ASSESSMENT PERFORMANCE</span>
+                            <h2>Latest Result</h2>
+                        </div>
+
+                        <a href="assessments.html">View All</a>
+
+                    </div>
+
+
+                    <div class="assessment-result">
+
+                        <div class="score-circle" id="scoreCircle">
+                            <strong id="latestScore">--</strong>
+                            <span>Score</span>
+                        </div>
+
+                        <div class="assessment-result-info">
+
+                            <h3>Weather Observation & Forecasting</h3>
+
+                            <p>
+                                Module 04 · Forecasting Methods
+                            </p>
+
+                            <div class="result-status" id="resultStatus">
+                                Assessment not attempted
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="assessment-stats">
+
+                        <div>
+                            <span>Pass Mark</span>
+                            <strong>70%</strong>
+                        </div>
+
+                        <div>
+                            <span>Questions</span>
+                            <strong>10</strong>
+                        </div>
+
+                        <div>
+                            <span>Time Limit</span>
+                            <strong>15 min</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NEXT DEVELOPMENT -->
+            <div class="development-banner">
+
+                <div class="development-content">
+
+                    <span class="section-tag">NEXT DEVELOPMENT AREA</span>
+
+                    <h2>Build your Leadership & Management Competency</h2>
+
+                    <p>
+                        Continue your organizational capacity building journey by
+                        completing the remaining modules in your leadership training.
+                    </p>
+
+                    <a href="course-details.html" class="primary-btn">
+                        Continue Training →
+                    </a>
+
+                </div>
+
+                <div class="development-graphic">
+                    <div class="graphic-circle circle-one"></div>
+                    <div class="graphic-circle circle-two"></div>
+                    <div class="graphic-center">✦</div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/progress.js"></script>
+
+</body>
+</html>
