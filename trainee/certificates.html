@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Certificates | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/certificates.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-mark">C</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Training Courses</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <span class="nav-icon">◔</span>
+                <span>My Progress</span>
+            </a>
+
+            <a href="assessments.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Assessments</span>
+            </a>
+
+            <a href="certificates.html" class="nav-item active">
+                <span class="nav-icon">▤</span>
+                <span>Certificates</span>
+            </a>
+
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+                <div class="help-icon">?</div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Contact support</span>
+                </div>
+
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <h1>Certificates</h1>
+
+                <p>
+                    View and manage your completed training certificates.
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="icon-btn" title="Notifications">
+                    ♢
+                    <span class="header-dot"></span>
+                </button>
+
+
+                <div class="user-profile">
+
+                    <div class="user-avatar" id="userAvatar">
+                        S
+                    </div>
+
+                    <div class="user-info">
+
+                        <strong id="userName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+
+                    </div>
+
+                    <span class="profile-arrow">⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================================
+             PAGE
+        ========================================== -->
+
+        <section class="certificates-page">
+
+
+            <!-- PAGE INTRO -->
+
+            <div class="certificates-intro">
+
+                <div>
+
+                    <span class="section-tag">
+                        TRAINING ACHIEVEMENTS
+                    </span>
+
+                    <h2>
+                        Your Training Certificates
+                    </h2>
+
+                    <p>
+                        Certificates are issued after successful completion
+                        of the required training modules and assessments.
+                    </p>
+
+                </div>
+
+
+                <div class="certificate-count">
+
+                    <strong id="certificateCount">
+                        1
+                    </strong>
+
+                    <span>
+                        Certificate Earned
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 EARNED CERTIFICATE
+            ========================================== -->
+
+            <div class="certificate-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-tag">
+                            EARNED CERTIFICATES
+                        </span>
+
+                        <h2>
+                            Completed Training
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate-card">
+
+
+                    <!-- CERTIFICATE PREVIEW -->
+
+                    <div class="certificate-preview">
+
+                        <div class="certificate-inner">
+
+                            <div class="certificate-brand">
+                                CAPACITY CONNECT
+                            </div>
+
+                            <div class="certificate-small-title">
+                                CERTIFICATE OF COMPLETION
+                            </div>
+
+                            <div class="certificate-line"></div>
+
+                            <p class="certificate-presented">
+                                This certificate is proudly presented to
+                            </p>
+
+                            <h3 id="certificateName">
+                                Shivam Kumar
+                            </h3>
+
+                            <p class="certificate-text">
+                                for successfully completing the training programme
+                            </p>
+
+                            <h4>
+                                Professional Communication Skills
+                            </h4>
+
+                            <p class="certificate-category">
+                                Professional Skills
+                            </p>
+
+                            <div class="certificate-seal">
+                                <span>CC</span>
+                                <small>VERIFIED</small>
+                            </div>
+
+                            <div class="certificate-bottom">
+
+                                <div>
+                                    <span>Completion Date</span>
+                                    <strong>12 September 2026</strong>
+                                </div>
+
+                                <div>
+                                    <span>Certificate ID</span>
+                                    <strong>CC-PC-2026-00124</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CERTIFICATE DETAILS -->
+
+                    <div class="certificate-details">
+
+                        <div class="certificate-status">
+                            <span class="status-dot"></span>
+                            Certificate Earned
+                        </div>
+
+
+                        <h3>
+                            Professional Communication Skills
+                        </h3>
+
+                        <p class="certificate-description">
+                            You successfully completed all required training
+                            modules and the subject-wise assessment for this
+                            programme.
+                        </p>
+
+
+                        <div class="certificate-info-grid">
+
+                            <div class="certificate-info">
+
+                                <span>Training Area</span>
+
+                                <strong>
+                                    Professional Skills
+                                </strong>
+
+                            </div>
+
+
+                            <div class="certificate-info">
+
+                                <span>Training Modules</span>
+
+                                <strong>
+                                    6 of 6 Completed
+                                </strong>
+
+                            </div>
+
+
+                            <div class="certificate-info">
+
+                                <span>Assessment Score</span>
+
+                                <strong id="certificateScore">
+                                    84%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="certificate-info">
+
+                                <span>Certificate ID</span>
+
+                                <strong>
+                                    CC-PC-2026-00124
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="competencies-earned">
+
+                            <span class="detail-label">
+                                COMPETENCIES DEVELOPED
+                            </span>
+
+                            <div class="competency-tags">
+
+                                <span>
+                                    Professional Communication
+                                </span>
+
+                                <span>
+                                    Workplace Collaboration
+                                </span>
+
+                                <span>
+                                    Presentation Skills
+                                </span>
+
+                                <span>
+                                    Organizational Skills
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="certificate-actions">
+
+                            <button
+                                class="primary-certificate-btn"
+                                id="viewCertificateBtn"
+                            >
+                                View Certificate
+                                <span>→</span>
+                            </button>
+
+                            <button
+                                class="secondary-certificate-btn"
+                                id="printCertificateBtn"
+                            >
+                                Print Certificate
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 UPCOMING CERTIFICATES
+            ========================================== -->
+
+            <div class="certificate-section upcoming-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-tag">
+                            IN PROGRESS
+                        </span>
+
+                        <h2>
+                            Certificates in Progress
+                        </h2>
+
+                    </div>
+
+                    <a href="courses.html" class="view-courses">
+                        Explore Training →
+                    </a>
+
+                </div>
+
+
+                <div class="upcoming-grid">
+
+
+                    <!-- CARD 1 -->
+
+                    <div class="upcoming-card">
+
+                        <div class="upcoming-icon weather">
+                            ☁
+                        </div>
+
+                        <div class="upcoming-content">
+
+                            <div class="upcoming-top">
+
+                                <span class="progress-status">
+                                    68% Complete
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Weather Observation & Forecasting
+                            </h3>
+
+                            <p>
+                                Meteorological Training
+                            </p>
+
+                            <div class="upcoming-progress">
+
+                                <span style="width:68%"></span>
+
+                            </div>
+
+                            <div class="upcoming-footer">
+
+                                <span>
+                                    4 of 6 modules
+                                </span>
+
+                                <a href="learning.html">
+                                    Continue →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 2 -->
+
+                    <div class="upcoming-card">
+
+                        <div class="upcoming-icon climate">
+                            ◌
+                        </div>
+
+                        <div class="upcoming-content">
+
+                            <div class="upcoming-top">
+
+                                <span class="progress-status">
+                                    45% Complete
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Climate Risk & Environmental Awareness
+                            </h3>
+
+                            <p>
+                                Climate & Environmental Studies
+                            </p>
+
+                            <div class="upcoming-progress">
+
+                                <span style="width:45%"></span>
+
+                            </div>
+
+                            <div class="upcoming-footer">
+
+                                <span>
+                                    3 of 7 modules
+                                </span>
+
+                                <a href="course-details.html">
+                                    Continue →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CARD 3 -->
+
+                    <div class="upcoming-card">
+
+                        <div class="upcoming-icon leadership">
+                            ◈
+                        </div>
+
+                        <div class="upcoming-content">
+
+                            <div class="upcoming-top">
+
+                                <span class="progress-status">
+                                    32% Complete
+                                </span>
+
+                            </div>
+
+                            <h3>
+                                Leadership & Organizational Development
+                            </h3>
+
+                            <p>
+                                Leadership & Management
+                            </p>
+
+                            <div class="upcoming-progress">
+
+                                <span style="width:32%"></span>
+
+                            </div>
+
+                            <div class="upcoming-footer">
+
+                                <span>
+                                    2 of 6 modules
+                                </span>
+
+                                <a href="course-details.html">
+                                    Continue →
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+                 INFO BANNER
+            ========================================== -->
+
+            <div class="certificate-info-banner">
+
+                <div class="info-banner-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h3>
+                        How are certificates issued?
+                    </h3>
+
+                    <p>
+                        Complete all required training modules and achieve
+                        the required score in the associated subject-wise
+                        MCQ assessment. Your certificate becomes available
+                        after successful completion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/certificates.js"></script>
+
+</body>
+</html>
