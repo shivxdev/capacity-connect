@@ -1112,7 +1112,6 @@ button {
 
     .hero-container {
         grid-template-columns: 1fr;
-
         padding: 70px 0;
     }
 
@@ -1138,7 +1137,7 @@ button {
 
     .feature-grid,
     .course-grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .process-grid {
@@ -1163,12 +1162,54 @@ button {
         height: 70px;
     }
 
+    /* Keep login + Get Started visible on mobile */
     .nav-actions {
-        display: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .login-link {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* Mobile Get Started button */
+    .nav-actions .btn {
+        padding: 9px 13px;
+        font-size: 12px;
+        line-height: 1.2;
+        border-radius: 10px;
+        white-space: nowrap;
+        min-width: auto;
+        width: auto;
+        box-shadow: 0 7px 18px rgba(117, 87, 232, 0.16);
     }
 
     .menu-btn {
         display: block;
+        flex-shrink: 0;
+        font-size: 27px;
+        margin-left: 3px;
+        padding: 0;
+    }
+
+    .nav-container {
+        width: 94%;
+        gap: 8px;
+    }
+
+    .logo {
+        min-width: 0;
+        flex-shrink: 1;
+    }
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+    .logo small {
+        font-size: 7px;
     }
 
     .hero-container {
@@ -1199,7 +1240,7 @@ button {
     }
 
     .stats-container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .stat:nth-child(2) {
@@ -1240,6 +1281,56 @@ button {
 
 @media (max-width: 450px) {
 
+    .navbar {
+        height: 66px;
+    }
+
+    .nav-container {
+        width: 95%;
+        gap: 5px;
+    }
+
+    .logo {
+        gap: 7px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+        font-size: 19px;
+        flex-shrink: 0;
+    }
+
+    .logo h2 {
+        font-size: 15px;
+        letter-spacing: -0.4px;
+    }
+
+    .logo small {
+        font-size: 6px;
+        letter-spacing: 0.6px;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .login-link {
+        font-size: 12px;
+    }
+
+    .nav-actions .btn {
+        padding: 8px 10px;
+        font-size: 11px;
+        border-radius: 9px;
+    }
+
+    .menu-btn {
+        font-size: 25px;
+        margin-left: 1px;
+    }
+
     .hero h1 {
         font-size: 42px;
     }
@@ -1270,51 +1361,5 @@ button {
 
     .footer-brand {
         grid-column: auto;
-    }
-}
-/* =========================================
-   MOBILE NAVBAR FIX
-========================================= */
-
-@media (max-width: 768px) {
-
-    .nav-cta {
-        padding: 10px 16px !important;
-        font-size: 14px !important;
-        line-height: 1.2;
-        border-radius: 12px;
-        min-width: auto;
-        width: auto;
-        height: auto;
-    }
-
-    .nav-login {
-        font-size: 14px !important;
-        margin-right: 10px;
-    }
-
-    .nav-menu-btn {
-        font-size: 30px;
-        margin-left: 6px;
-    }
-}
-
-
-/* Small phones */
-@media (max-width: 480px) {
-
-    .nav-cta {
-        padding: 9px 12px !important;
-        font-size: 12px !important;
-        border-radius: 10px;
-    }
-
-    .nav-login {
-        font-size: 13px !important;
-        margin-right: 7px;
-    }
-
-    .nav-menu-btn {
-        font-size: 28px;
     }
 }
