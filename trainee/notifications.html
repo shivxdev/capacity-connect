@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications | Capacity Connect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-icon">C</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+        <div class="sidebar-role">
+            <span class="role-dot"></span>
+            <span>Trainee Portal</span>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">MAIN MENU</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Training Courses</span>
+            </a>
+
+            <a href="learning.html" class="nav-item">
+                <span class="nav-icon">▶</span>
+                <span>Learning</span>
+            </a>
+
+            <a href="assessments.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Assessments</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <span class="nav-icon">◔</span>
+                <span>My Progress</span>
+            </a>
+
+            <a href="certificates.html" class="nav-item">
+                <span class="nav-icon">◇</span>
+                <span>Certificates</span>
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">○</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item active">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="nav-badge" id="sidebarBadge">3</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="capacity-tip">
+                <div class="tip-icon">✦</div>
+
+                <div>
+                    <strong>Build Your Capacity</strong>
+                    <p>Explore new training opportunities.</p>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <button class="mobile-menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <div class="header-title">
+                <h1>Notifications</h1>
+                <p>Stay updated with your training and capacity development activities.</p>
+            </div>
+
+                 <div class="sidebar-bottom">
+
+                <a href="profile.html" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+
+                    </div>
+
+                    <span class="profile-arrow">›</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn">
+                    <span>↪</span>
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+        <section class="notifications-page">
+
+            <!-- TOP SECTION -->
+            <div class="page-top">
+
+                <div>
+                    <span class="section-label">UPDATES</span>
+
+                    <h2>Announcements & Notifications</h2>
+
+                    <p>
+                        Important updates about training courses, assessments,
+                        certificates and capacity development activities.
+                    </p>
+                </div>
+
+                <button class="mark-all-btn" id="markAllBtn">
+                    ✓ Mark all as read
+                </button>
+
+            </div>
+
+
+            <!-- FILTERS -->
+            <div class="notification-filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="unread">
+                    Unread
+                    <span class="filter-count" id="unreadCount">3</span>
+                </button>
+
+                <button class="filter-btn" data-filter="training">
+                    Training
+                </button>
+
+                <button class="filter-btn" data-filter="assessment">
+                    Assessment
+                </button>
+
+                <button class="filter-btn" data-filter="certificate">
+                    Certificate
+                </button>
+
+            </div>
+
+
+            <!-- NOTIFICATION LIST -->
+            <div class="notification-list" id="notificationList">
+
+
+                <!-- NOTIFICATION 1 -->
+                <article
+                    class="notification-card unread"
+                    data-type="training"
+                    data-read="false"
+                >
+
+                    <div class="notification-icon-box training">
+                        ▣
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                New Training Course Available
+                            </h3>
+
+                            <span class="unread-dot"></span>
+
+                        </div>
+
+                        <p>
+                            A new training programme on
+                            <strong>Climate Risk & Environmental Awareness</strong>
+                            is now available for enrollment.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Training Update</span>
+                            <span>•</span>
+                            <span>2 hours ago</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        View Course →
+                    </button>
+
+                </article>
+
+
+                <!-- NOTIFICATION 2 -->
+                <article
+                    class="notification-card unread"
+                    data-type="assessment"
+                    data-read="false"
+                >
+
+                    <div class="notification-icon-box assessment">
+                        ✓
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                Assessment Reminder
+                            </h3>
+
+                            <span class="unread-dot"></span>
+
+                        </div>
+
+                        <p>
+                            Your <strong>Weather Observation & Forecasting</strong>
+                            MCQ assessment is ready. Complete the assessment to
+                            evaluate your module learning.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Assessment</span>
+                            <span>•</span>
+                            <span>Yesterday</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        Take Assessment →
+                    </button>
+
+                </article>
+
+
+                <!-- NOTIFICATION 3 -->
+                <article
+                    class="notification-card unread"
+                    data-type="certificate"
+                    data-read="false"
+                >
+
+                    <div class="notification-icon-box certificate">
+                        ◇
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                Training Certificate Update
+                            </h3>
+
+                            <span class="unread-dot"></span>
+
+                        </div>
+
+                        <p>
+                            Your training completion record has been updated.
+                            Check your certificate section for the latest
+                            certification status.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Certificate</span>
+                            <span>•</span>
+                            <span>2 days ago</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        View Certificates →
+                    </button>
+
+                </article>
+
+
+                <!-- NOTIFICATION 4 -->
+                <article
+                    class="notification-card"
+                    data-type="training"
+                    data-read="true"
+                >
+
+                    <div class="notification-icon-box training">
+                        ▣
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                Learning Resource Added
+                            </h3>
+
+                        </div>
+
+                        <p>
+                            New presentations and study materials have been added
+                            to the <strong>Leadership & Organizational Development</strong>
+                            training course.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Learning Resources</span>
+                            <span>•</span>
+                            <span>4 days ago</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        Open Resources →
+                    </button>
+
+                </article>
+
+
+                <!-- NOTIFICATION 5 -->
+                <article
+                    class="notification-card"
+                    data-type="assessment"
+                    data-read="true"
+                >
+
+                    <div class="notification-icon-box assessment">
+                        ✓
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                Assessment Result Published
+                            </h3>
+
+                        </div>
+
+                        <p>
+                            Your result for the
+                            <strong>Professional Communication Skills</strong>
+                            assessment is now available in your progress record.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Assessment Result</span>
+                            <span>•</span>
+                            <span>1 week ago</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        View Progress →
+                    </button>
+
+                </article>
+
+
+                <!-- NOTIFICATION 6 -->
+                <article
+                    class="notification-card"
+                    data-type="training"
+                    data-read="true"
+                >
+
+                    <div class="notification-icon-box training">
+                        ▣
+                    </div>
+
+                    <div class="notification-content">
+
+                        <div class="notification-heading">
+
+                            <h3>
+                                Training Schedule Updated
+                            </h3>
+
+                        </div>
+
+                        <p>
+                            The upcoming session schedule for
+                            <strong>Meteorological Training</strong>
+                            has been updated by the trainer.
+                        </p>
+
+                        <div class="notification-meta">
+                            <span>Training Schedule</span>
+                            <span>•</span>
+                            <span>1 week ago</span>
+                        </div>
+
+                    </div>
+
+                    <button class="notification-action">
+                        View Training →
+                    </button>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- EMPTY STATE -->
+            <div class="empty-state" id="emptyState">
+
+                <div class="empty-icon">
+                    ♢
+                </div>
+
+                <h3>No notifications found</h3>
+
+                <p>
+                    There are no notifications matching the selected filter.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/notifications.js"></script>
+
+</body>
+</html>
