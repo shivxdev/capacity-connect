@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-mark">C</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Training Courses</span>
+            </a>
+
+            <a href="progress.html" class="nav-item">
+                <span class="nav-icon">◔</span>
+                <span>My Progress</span>
+            </a>
+
+            <a href="assessments.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Assessments</span>
+            </a>
+
+            <a href="certificates.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Certificates</span>
+            </a>
+
+
+            <p class="nav-label">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item active">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+                <div class="help-icon">?</div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Contact support</span>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+                <h1>My Profile</h1>
+                <p>
+                    Manage your trainee information and competency profile.
+                </p>
+            </div>
+
+
+                     <div class="sidebar-bottom">
+
+                <a href="profile.html" class="profile-mini">
+
+                    <div class="profile-avatar">
+                        SK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong id="sidebarUserName">
+                            Shivam Kumar
+                        </strong>
+
+                        <span>Trainee</span>
+
+                    </div>
+
+                    <span class="profile-arrow">›</span>
+
+                </a>
+
+                <button class="logout-btn" id="logoutBtn">
+                    <span>↪</span>
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PROFILE PAGE ================= -->
+
+        <section class="profile-page">
+
+
+            <!-- PROFILE HERO -->
+
+            <div class="profile-hero">
+
+                <div class="profile-main">
+
+                    <div class="large-avatar" id="profileAvatar">
+                        S
+                    </div>
+
+                    <div class="profile-identity">
+
+                        <span class="profile-role">
+                            TRAINEE
+                        </span>
+
+                        <h2 id="profileName">
+                            Shivam Kumar
+                        </h2>
+
+                        <p id="profileEmail">
+                            shivam@example.com
+                        </p>
+
+                        <div class="profile-status">
+                            <span></span>
+                            Active Trainee
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="edit-profile-btn" id="editProfileBtn">
+                    Edit Profile
+                </button>
+
+            </div>
+
+
+            <!-- ================= TWO COLUMN ================= -->
+
+            <div class="profile-grid">
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <div class="profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="card-tag">
+                                PERSONAL INFORMATION
+                            </span>
+
+                            <h3>Basic Details</h3>
+                        </div>
+
+                        <div class="card-icon">
+                            ◯
+                        </div>
+
+                    </div>
+
+
+                    <div class="details-list">
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                A
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Full Name</span>
+                                <strong id="fullName">
+                                    Shivam Kumar
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                @
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Email Address</span>
+                                <strong id="emailAddress">
+                                    shivam@example.com
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                #
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Trainee ID</span>
+                                <strong>
+                                    CC-TR-2026-001
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                ☎
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Contact Number</span>
+                                <strong>
+                                    +91 XXXXX XXXXX
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORGANIZATIONAL DETAILS -->
+
+                <div class="profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="card-tag">
+                                ORGANIZATIONAL DETAILS
+                            </span>
+
+                            <h3>Training Information</h3>
+                        </div>
+
+                        <div class="card-icon">
+                            ◈
+                        </div>
+
+                    </div>
+
+
+                    <div class="details-list">
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                O
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Organization</span>
+                                <strong>
+                                    Capacity Connect Organization
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                D
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Department</span>
+                                <strong>
+                                    Technical & Capacity Development
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                R
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Role</span>
+                                <strong>
+                                    Trainee
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <div class="detail-icon">
+                                ◷
+                            </div>
+
+                            <div class="detail-content">
+                                <span>Joined Platform</span>
+                                <strong>
+                                    September 2026
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= COMPETENCY PROFILE ================= -->
+
+            <div class="profile-card competency-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <span class="card-tag">
+                            COMPETENCY DEVELOPMENT
+                        </span>
+
+                        <h3>Competency Profile</h3>
+
+                        <p>
+                            Your competency development based on training
+                            participation and assessment performance.
+                        </p>
+                    </div>
+
+                    <div class="card-icon sparkle">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <div class="competency-list">
+
+
+                    <!-- TECHNICAL -->
+
+                    <div class="competency-item">
+
+                        <div class="competency-header">
+
+                            <div>
+                                <strong>
+                                    Technical Competencies
+                                </strong>
+
+                                <span>
+                                    Technical knowledge and domain capability
+                                </span>
+                            </div>
+
+                            <b>72%</b>
+
+                        </div>
+
+                        <div class="competency-bar">
+                            <span style="width:72%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROFESSIONAL -->
+
+                    <div class="competency-item">
+
+                        <div class="competency-header">
+
+                            <div>
+                                <strong>
+                                    Professional Skills
+                                </strong>
+
+                                <span>
+                                    Communication and workplace capabilities
+                                </span>
+                            </div>
+
+                            <b>61%</b>
+
+                        </div>
+
+                        <div class="competency-bar">
+                            <span style="width:61%"></span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- LEADERSHIP -->
+
+                    <div class="competency-item">
+
+                        <div class="competency-header">
+
+                            <div>
+                                <strong>
+                                    Leadership & Management
+                                </strong>
+
+                                <span>
+                                    Organizational and leadership capabilities
+                                </span>
+                            </div>
+
+                            <b>48%</b>
+
+                        </div>
+
+                        <div class="competency-bar">
+                            <span style="width:48%"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ACCOUNT SUMMARY ================= -->
+
+            <div class="profile-bottom-grid">
+
+
+                <div class="profile-card account-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <span class="card-tag">
+                                ACCOUNT
+                            </span>
+
+                            <h3>Account Information</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="account-status-row">
+
+                        <div>
+                            <span>Account Status</span>
+                            <strong class="active-text">
+                                Active
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Account Role</span>
+                            <strong>
+                                Trainee
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Access Level</span>
+                            <strong>
+                                Training Access
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-card profile-tip">
+
+                    <div class="tip-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <span class="card-tag">
+                            CAPACITY DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Keep developing your competencies
+                        </h3>
+
+                        <p>
+                            Complete training programmes and assessments
+                            to strengthen your competency profile.
+                        </p>
+
+                        <a href="courses.html">
+                            Explore Training Courses →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/profile.js"></script>
+
+</body>
+</html>
