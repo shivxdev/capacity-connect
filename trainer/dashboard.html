@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trainer Dashboard | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/trainer-dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+        
+   <!-- Logo -->
+                <a href="" class="sidebar-logo">
+
+                    <div class="logo-icon">
+                        CC
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">TRAINER PORTAL</p>
+
+            <a href="dashboard.html" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">2</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-help">
+
+               
+
+    
+
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <p class="header-label">
+                    TRAINER PORTAL
+                </p>
+
+                <h1>Trainer Dashboard</h1>
+
+            </div>
+
+
+            <div class="header-profile">
+
+                <a href="profile.html" class="profile-mini">
+
+                    <div class="profile-avatar" id="headerAvatar">
+                        TR
+                    </div>
+
+                    <div class="profile-mini-info">
+
+                        <strong id="headerTrainerName">
+                            Trainer
+                        </strong>
+
+                        <span>
+                            Trainer
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+
+        <section class="trainer-dashboard-page">
+
+
+            <!-- WELCOME -->
+
+            <div class="trainer-welcome">
+
+                <div>
+
+                    <span class="section-tag">
+                        CAPACITY DEVELOPMENT
+                    </span>
+
+                    <h2>
+                        Welcome back,
+                        <span id="trainerName">
+                            Trainer
+                        </span>
+                    </h2>
+
+                    <p>
+                        Manage your training programmes, learning resources
+                        and trainee participation from one place.
+                    </p>
+
+                </div>
+
+
+                <a href="create-course.html" class="create-training-btn">
+                    <span>＋</span>
+                    Create Training
+                </a>
+
+            </div>
+
+
+            <!-- =========================
+                 STATISTICS
+            ========================== -->
+
+            <div class="trainer-stats-grid">
+
+
+                <div class="trainer-stat-card">
+
+                    <div class="trainer-stat-icon purple">
+                        ▣
+                    </div>
+
+                    <div>
+
+                        <span class="trainer-stat-label">
+                            Active Training Courses
+                        </span>
+
+                        <strong>
+                            06
+                        </strong>
+
+                        <small>
+                            +2 this month
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trainer-stat-card">
+
+                    <div class="trainer-stat-icon blue">
+                        ◯
+                    </div>
+
+                    <div>
+
+                        <span class="trainer-stat-label">
+                            Assigned Trainees
+                        </span>
+
+                        <strong>
+                            128
+                        </strong>
+
+                        <small>
+                            Across all programmes
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trainer-stat-card">
+
+                    <div class="trainer-stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span class="trainer-stat-label">
+                            Completion Rate
+                        </span>
+
+                        <strong>
+                            78%
+                        </strong>
+
+                        <small>
+                            Current participation
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trainer-stat-card">
+
+                    <div class="trainer-stat-icon orange">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <span class="trainer-stat-label">
+                            Training Hours
+                        </span>
+
+                        <strong>
+                            46
+                        </strong>
+
+                        <small>
+                            This month
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 MAIN DASHBOARD GRID
+            ========================== -->
+
+            <div class="trainer-main-grid">
+
+
+                <!-- MY TRAINING COURSES -->
+
+                <div class="trainer-panel courses-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                TRAINING PROGRAMMES
+                            </span>
+
+                            <h3>
+                                My Training Courses
+                            </h3>
+
+                        </div>
+
+                        <a href="my-courses.html">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="trainer-course-list">
+
+
+                        <!-- COURSE 1 -->
+
+                        <div class="trainer-course-item">
+
+                            <div class="course-icon meteorology">
+                                ☁
+                            </div>
+
+                            <div class="trainer-course-info">
+
+                                <h4>
+                                    Weather Observation & Forecasting
+                                </h4>
+
+                                <p>
+                                    Meteorological Training
+                                </p>
+
+                                <div class="course-meta">
+
+                                    <span>
+                                        32 Trainees
+                                    </span>
+
+                                    <span>
+                                        8 Modules
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="course-status active">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <!-- COURSE 2 -->
+
+                        <div class="trainer-course-item">
+
+                            <div class="course-icon climate">
+                                ◌
+                            </div>
+
+                            <div class="trainer-course-info">
+
+                                <h4>
+                                    Climate Risk & Environmental Awareness
+                                </h4>
+
+                                <p>
+                                    Climate & Environmental Studies
+                                </p>
+
+                                <div class="course-meta">
+
+                                    <span>
+                                        41 Trainees
+                                    </span>
+
+                                    <span>
+                                        7 Modules
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="course-status active">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <!-- COURSE 3 -->
+
+                        <div class="trainer-course-item">
+
+                            <div class="course-icon leadership">
+                                ◈
+                            </div>
+
+                            <div class="trainer-course-info">
+
+                                <h4>
+                                    Leadership & Organizational Development
+                                </h4>
+
+                                <p>
+                                    Leadership & Management
+                                </p>
+
+                                <div class="course-meta">
+
+                                    <span>
+                                        55 Trainees
+                                    </span>
+
+                                    <span>
+                                        6 Modules
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <span class="course-status draft">
+                                Draft
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="trainer-panel quick-actions-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                WORKSPACE
+                            </span>
+
+                            <h3>
+                                Quick Actions
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quick-action-list">
+
+
+                        <a href="create-course.html"
+                           class="quick-action">
+
+                            <div class="quick-action-icon">
+                                ＋
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Create Training Course
+                                </strong>
+
+                                <span>
+                                    Add a new capacity building programme
+                                </span>
+
+                            </div>
+
+                            <b>→</b>
+
+                        </a>
+
+
+                        <a href="questionnaire.html"
+                           class="quick-action">
+
+                            <div class="quick-action-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Manage Questionnaire
+                                </strong>
+
+                                <span>
+                                    Create subject-wise MCQ assessments
+                                </span>
+
+                            </div>
+
+                            <b>→</b>
+
+                        </a>
+
+
+                        <a href="trainer-library.html"
+                           class="quick-action">
+
+                            <div class="quick-action-icon">
+                                ▤
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Resource Library
+                                </strong>
+
+                                <span>
+                                    Manage presentations and study materials
+                                </span>
+
+                            </div>
+
+                            <b>→</b>
+
+                        </a>
+
+
+                        <a href="trainees.html"
+                           class="quick-action">
+
+                            <div class="quick-action-icon">
+                                ◯
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Monitor Trainees
+                                </strong>
+
+                                <span>
+                                    View participation and performance
+                                </span>
+
+                            </div>
+
+                            <b>→</b>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 LOWER GRID
+            ========================== -->
+
+            <div class="trainer-lower-grid">
+
+
+                <!-- TRAINEE PARTICIPATION -->
+
+                <div class="trainer-panel participation-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                PARTICIPATION
+                            </span>
+
+                            <h3>
+                                Trainee Performance
+                            </h3>
+
+                        </div>
+
+                        <a href="trainees.html">
+                            View Details →
+                        </a>
+
+                    </div>
+
+
+                    <div class="performance-content">
+
+                        <div class="performance-chart">
+
+                            <div class="chart-bar" style="height:55%;">
+                                <span>55</span>
+                            </div>
+
+                            <div class="chart-bar" style="height:70%;">
+                                <span>70</span>
+                            </div>
+
+                            <div class="chart-bar" style="height:64%;">
+                                <span>64</span>
+                            </div>
+
+                            <div class="chart-bar" style="height:82%;">
+                                <span>82</span>
+                            </div>
+
+                            <div class="chart-bar" style="height:78%;">
+                                <span>78</span>
+                            </div>
+
+                            <div class="chart-bar" style="height:88%;">
+                                <span>88</span>
+                            </div>
+
+                        </div>
+
+                        <div class="chart-labels">
+
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RECENT ACTIVITY -->
+
+                <div class="trainer-panel activity-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                RECENT ACTIVITY
+                            </span>
+
+                            <h3>
+                                Training Activity
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-dot purple-dot"></div>
+
+                            <div>
+
+                                <strong>
+                                    New trainee enrolled
+                                </strong>
+
+                                <span>
+                                    Weather Observation & Forecasting
+                                </span>
+
+                            </div>
+
+                            <small>
+                                2h
+                            </small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-dot green-dot"></div>
+
+                            <div>
+
+                                <strong>
+                                    Assessment completed
+                                </strong>
+
+                                <span>
+                                    Climate Risk & Environmental Awareness
+                                </span>
+
+                            </div>
+
+                            <small>
+                                5h
+                            </small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-dot orange-dot"></div>
+
+                            <div>
+
+                                <strong>
+                                    Resource uploaded
+                                </strong>
+
+                                <span>
+                                    Presentation & Study Materials
+                                </span>
+
+                            </div>
+
+                            <small>
+                                1d
+                            </small>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-dot blue-dot"></div>
+
+                            <div>
+
+                                <strong>
+                                    Training module updated
+                                </strong>
+
+                                <span>
+                                    Leadership & Organizational Development
+                                </span>
+
+                            </div>
+
+                            <small>
+                                2d
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 COMPETENCY MAPPING
+            ========================== -->
+
+            <div class="competency-banner">
+
+                <div class="competency-banner-icon">
+                    ◇
+                </div>
+
+                <div class="competency-banner-content">
+
+                    <span>
+                        COMPETENCY MAPPING
+                    </span>
+
+                    <h3>
+                        Connect training with required competencies
+                    </h3>
+
+                    <p>
+                        Use trainee participation and performance data
+                        to identify competency development areas and
+                        align training resources accordingly.
+                    </p>
+
+                </div>
+
+                <a href="trainees.html">
+                    View Trainee Insights →
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/trainer-dashboard.js"></script>
+
+</body>
+</html>

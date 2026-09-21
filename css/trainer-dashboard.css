@@ -1,0 +1,897 @@
+/* =========================================================
+   TRAINER DASHBOARD
+   CAPACITY CONNECT
+========================================================= */
+
+.trainer-dashboard-page,
+.trainer-dashboard-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.trainer-dashboard-page {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    padding: 30px 38px 55px;
+}
+
+
+/* =========================================================
+   WELCOME
+========================================================= */
+
+.trainer-welcome {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 28px;
+}
+
+.trainer-welcome > div {
+    min-width: 0;
+}
+
+.section-tag,
+.panel-label {
+    display: block;
+
+    color: #8060bd;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+}
+
+.trainer-welcome h2 {
+    margin: 7px 0 7px;
+
+    color: #292239;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 31px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.trainer-welcome h2 span {
+    color: #7655b5;
+}
+
+.trainer-welcome p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #8b8495;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+.create-training-btn {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 0 17px;
+
+    background: #7052ad;
+
+    color: #ffffff;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 20px rgba(112, 82, 173, 0.18);
+
+    transition: 0.2s ease;
+}
+
+.create-training-btn:hover {
+    background: #60469b;
+
+    transform: translateY(-1px);
+}
+
+.create-training-btn span {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.trainer-stats-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.trainer-stat-card {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e2ef;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(70, 50, 100, 0.035);
+}
+
+.trainer-stat-icon {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.trainer-stat-icon.purple {
+    background: #eee8ff;
+    color: #7556b5;
+}
+
+.trainer-stat-icon.blue {
+    background: #e8f0ff;
+    color: #5277bb;
+}
+
+.trainer-stat-icon.green {
+    background: #e8f6ef;
+    color: #4a9673;
+}
+
+.trainer-stat-icon.orange {
+    background: #fff0e5;
+    color: #c17a40;
+}
+
+.trainer-stat-label {
+    display: block;
+
+    color: #928b9b;
+
+    font-size: 8px;
+}
+
+.trainer-stat-card strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #342d40;
+
+    font-size: 23px;
+
+    line-height: 1;
+}
+
+.trainer-stat-card small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #a49daa;
+
+    font-size: 7px;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.trainer-main-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.55fr)
+        minmax(320px, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   PANEL
+========================================================= */
+
+.trainer-panel {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e2ef;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(70, 50, 100, 0.035);
+}
+
+.panel-header {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 20px 21px 15px;
+}
+
+.panel-header h3 {
+    margin: 5px 0 0;
+
+    color: #30283d;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 19px;
+
+    line-height: 1.25;
+}
+
+.panel-header > a {
+    flex-shrink: 0;
+
+    color: #7052ad;
+
+    text-decoration: none;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   COURSE LIST
+========================================================= */
+
+.trainer-course-list {
+    width: 100%;
+}
+
+.trainer-course-item {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 21px;
+
+    border-top: 1px solid #f0edf4;
+}
+
+.course-icon {
+    width: 39px;
+    height: 39px;
+
+    flex: 0 0 39px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.course-icon.meteorology {
+    background: #eee8ff;
+    color: #7557b5;
+}
+
+.course-icon.climate {
+    background: #eaf6f1;
+    color: #4b9479;
+}
+
+.course-icon.leadership {
+    background: #fff0e5;
+    color: #c07b43;
+}
+
+.trainer-course-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.trainer-course-info h4 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #403747;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trainer-course-info p {
+    margin: 4px 0;
+
+    color: #99919f;
+
+    font-size: 8px;
+}
+
+.course-meta {
+    display: flex;
+
+    gap: 12px;
+}
+
+.course-meta span {
+    color: #aaa2b0;
+
+    font-size: 7px;
+}
+
+.course-status {
+    flex-shrink: 0;
+
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+    font-weight: 700;
+}
+
+.course-status.active {
+    background: #eaf7f0;
+    color: #47876b;
+}
+
+.course-status.draft {
+    background: #f3eff9;
+    color: #87769e;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+========================================================= */
+
+.quick-action-list {
+    width: 100%;
+}
+
+.quick-action {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 13px 20px;
+
+    border-top: 1px solid #f0edf4;
+
+    text-decoration: none;
+
+    transition: background 0.2s ease;
+}
+
+.quick-action:hover {
+    background: #faf8fd;
+}
+
+.quick-action-icon {
+    width: 35px;
+    height: 35px;
+
+    flex: 0 0 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f1ecfb;
+
+    color: #7355ae;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+}
+
+.quick-action > div:nth-child(2) {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.quick-action strong {
+    display: block;
+
+    color: #433a4c;
+
+    font-size: 9px;
+}
+
+.quick-action span {
+    display: block;
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    color: #9b93a2;
+
+    font-size: 7px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.quick-action b {
+    color: #8b70b9;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   LOWER GRID
+========================================================= */
+
+.trainer-lower-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(320px, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   PERFORMANCE CHART
+========================================================= */
+
+.performance-content {
+    padding: 12px 25px 20px;
+}
+
+.performance-chart {
+    height: 145px;
+
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-around;
+
+    gap: 16px;
+
+    border-bottom: 1px solid #eeeaf3;
+}
+
+.chart-bar {
+    position: relative;
+
+    width: 30px;
+
+    min-height: 25px;
+
+    background: #8667c5;
+
+    border-radius: 7px 7px 0 0;
+
+    opacity: 0.9;
+}
+
+.chart-bar span {
+    position: absolute;
+
+    top: -17px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #81738f;
+
+    font-size: 7px;
+}
+
+.chart-labels {
+    display: flex;
+
+    justify-content: space-around;
+
+    padding-top: 7px;
+}
+
+.chart-labels span {
+    color: #aaa2af;
+
+    font-size: 7px;
+}
+
+
+/* =========================================================
+   ACTIVITY
+========================================================= */
+
+.activity-list {
+    width: 100%;
+}
+
+.activity-item {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 12px 20px;
+
+    border-top: 1px solid #f0edf4;
+}
+
+.activity-dot {
+    width: 7px;
+    height: 7px;
+
+    flex: 0 0 7px;
+
+    margin-top: 4px;
+
+    border-radius: 50%;
+}
+
+.purple-dot {
+    background: #8667c5;
+}
+
+.green-dot {
+    background: #57a17e;
+}
+
+.orange-dot {
+    background: #c9854b;
+}
+
+.blue-dot {
+    background: #6088c2;
+}
+
+.activity-item > div:nth-child(2) {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.activity-item strong {
+    display: block;
+
+    color: #4b4352;
+
+    font-size: 8px;
+}
+
+.activity-item span {
+    display: block;
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    color: #9b93a1;
+
+    font-size: 7px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.activity-item small {
+    flex-shrink: 0;
+
+    color: #aaa2af;
+
+    font-size: 7px;
+}
+
+
+/* =========================================================
+   COMPETENCY BANNER
+========================================================= */
+
+.competency-banner {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 19px 22px;
+
+    background: linear-gradient(
+        100deg,
+        #f5f0ff,
+        #faf8ff
+    );
+
+    border: 1px solid #e7ddf6;
+
+    border-radius: 15px;
+}
+
+.competency-banner-icon {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e8def9;
+
+    color: #7254ad;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+}
+
+.competency-banner-content {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.competency-banner-content > span {
+    color: #8167ac;
+
+    font-size: 7px;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.competency-banner-content h3 {
+    margin: 4px 0;
+
+    color: #433850;
+
+    font-size: 12px;
+}
+
+.competency-banner-content p {
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #92899d;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+.competency-banner > a {
+    flex-shrink: 0;
+
+    color: #6d50a6;
+
+    text-decoration: none;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .trainer-dashboard-page {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .trainer-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .trainer-main-grid,
+    .trainer-lower-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .trainer-dashboard-page {
+        padding: 20px 14px 40px;
+    }
+
+    .trainer-welcome {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .trainer-welcome h2 {
+        font-size: 26px;
+    }
+
+    .create-training-btn {
+        width: 100%;
+    }
+
+    .trainer-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-stat-card {
+        padding: 15px;
+    }
+
+    .trainer-course-item {
+        align-items: flex-start;
+
+        padding: 14px 15px;
+    }
+
+    .course-status {
+        display: none;
+    }
+
+    .trainer-course-info h4 {
+        white-space: normal;
+    }
+
+    .panel-header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .quick-action {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .performance-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .chart-bar {
+        width: 24px;
+    }
+
+    .competency-banner {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .competency-banner > a {
+        margin-left: 57px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .trainer-dashboard-page {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .trainer-welcome h2 {
+        font-size: 23px;
+    }
+
+    .trainer-stat-card strong {
+        font-size: 21px;
+    }
+
+    .performance-chart {
+        gap: 7px;
+    }
+
+    .chart-bar {
+        width: 20px;
+    }
+
+    .chart-labels span {
+        font-size: 6px;
+    }
+}
