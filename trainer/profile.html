@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trainer Profile | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/trainer-profile.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Logo -->
+                <a href="" class="sidebar-logo">
+
+                    <div class="logo-icon">
+                        CC
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">TRAINER PORTAL</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item active">
+                <span class="nav-icon">◉</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">2</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+          
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <p class="header-label">
+                    TRAINER PORTAL
+                </p>
+
+                <h1>My Profile</h1>
+
+            </div>
+
+
+            <div class="header-profile">
+
+                <a href="profile.html" class="profile-mini">
+
+                    <div class="profile-avatar" id="headerAvatar">
+                        TR
+                    </div>
+
+                    <div class="profile-mini-info">
+
+                        <strong id="headerName">
+                            Trainer
+                        </strong>
+
+                        <span>Trainer</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE -->
+
+        <section class="trainer-profile-page">
+
+
+            <!-- PROFILE HERO -->
+
+            <div class="trainer-profile-hero">
+
+                <div class="trainer-profile-main">
+
+                    <div class="large-trainer-avatar" id="profileAvatar">
+                        TR
+                    </div>
+
+                    <div class="trainer-profile-heading">
+
+                        <span class="section-tag">
+                            TRAINER PROFILE
+                        </span>
+
+                        <h2 id="profileName">
+                            Trainer
+                        </h2>
+
+                        <p id="profileEmail">
+                            trainer@capacityconnect.org
+                        </p>
+
+                        <div class="profile-status">
+                            <span></span>
+                            Active Trainer
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="edit-profile-btn" id="editProfileBtn">
+                    Edit Profile
+                </button>
+
+            </div>
+
+
+            <!-- INFORMATION GRID -->
+
+            <div class="profile-grid">
+
+
+                <!-- PERSONAL INFORMATION -->
+
+                <div class="profile-card">
+
+                    <div class="profile-card-header">
+
+                        <div class="profile-card-icon">
+                            ◯
+                        </div>
+
+                        <div>
+                            <span>PERSONAL INFORMATION</span>
+                            <h3>Trainer Details</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-fields">
+
+                        <div class="profile-field">
+
+                            <span>Full Name</span>
+
+                            <strong id="fullName">
+                                Trainer
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Email Address</span>
+
+                            <strong id="emailAddress">
+                                trainer@capacityconnect.org
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Trainer ID</span>
+
+                            <strong>
+                                TR-CC-2026-014
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Contact Number</span>
+
+                            <strong>
+                                +91 98765 43210
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORGANIZATIONAL DETAILS -->
+
+                <div class="profile-card">
+
+                    <div class="profile-card-header">
+
+                        <div class="profile-card-icon">
+                            ◇
+                        </div>
+
+                        <div>
+                            <span>ORGANIZATIONAL DETAILS</span>
+                            <h3>Professional Information</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-fields">
+
+                        <div class="profile-field">
+
+                            <span>Organization</span>
+
+                            <strong>
+                                Capacity Development Unit
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Department</span>
+
+                            <strong>
+                                Training & Development
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Designation</span>
+
+                            <strong>
+                                Senior Training Facilitator
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-field">
+
+                            <span>Joined Platform</span>
+
+                            <strong>
+                                January 2026
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRAINING SPECIALIZATION -->
+
+                <div class="profile-card wide-card">
+
+                    <div class="profile-card-header">
+
+                        <div class="profile-card-icon">
+                            ★
+                        </div>
+
+                        <div>
+                            <span>TRAINING SPECIALIZATION</span>
+                            <h3>Competencies & Expertise</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="specialization-content">
+
+                        <p>
+                            Areas of expertise and competencies used for
+                            training delivery and competency development.
+                        </p>
+
+
+                        <div class="competency-list">
+
+                            <span>
+                                Technical Competencies
+                            </span>
+
+                            <span>
+                                Professional Skills
+                            </span>
+
+                            <span>
+                                Leadership & Management
+                            </span>
+
+                            <span>
+                                Training Facilitation
+                            </span>
+
+                            <span>
+                                Organizational Capacity Building
+                            </span>
+
+                            <span>
+                                Knowledge Sharing
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRAINING EXPERIENCE -->
+
+                <div class="profile-card">
+
+                    <div class="profile-card-header">
+
+                        <div class="profile-card-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <span>TRAINING EXPERIENCE</span>
+                            <h3>Trainer Activity</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="trainer-metrics">
+
+                        <div>
+                            <strong>06</strong>
+                            <span>Training Courses</span>
+                        </div>
+
+                        <div>
+                            <strong>128</strong>
+                            <span>Trainees Reached</span>
+                        </div>
+
+                        <div>
+                            <strong>46</strong>
+                            <span>Training Hours</span>
+                        </div>
+
+                        <div>
+                            <strong>78%</strong>
+                            <span>Completion Rate</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACCOUNT STATUS -->
+
+                <div class="profile-card">
+
+                    <div class="profile-card-header">
+
+                        <div class="profile-card-icon">
+                            ◉
+                        </div>
+
+                        <div>
+                            <span>ACCOUNT INFORMATION</span>
+                            <h3>Platform Access</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="account-status-list">
+
+                        <div>
+                            <span>Account Status</span>
+                            <strong class="active-text">
+                                Active
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Platform Role</span>
+                            <strong>
+                                Trainer
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Training Access</span>
+                            <strong>
+                                Full Access
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>Resource Library</span>
+                            <strong>
+                                Enabled
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMPETENCY MAPPING BANNER -->
+
+            <div class="trainer-profile-banner">
+
+                <div class="banner-icon">
+                    ◇
+                </div>
+
+                <div>
+
+                    <span>
+                        COMPETENCY MAPPING
+                    </span>
+
+                    <h3>
+                        Align your expertise with organizational capacity needs
+                    </h3>
+
+                    <p>
+                        Your competencies and training areas can be mapped
+                        with required organizational skills and trainee
+                        development needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/trainer-profile.js"></script>
+
+</body>
+</html>
