@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Training Courses | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/trainer-courses.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <a href="" class="sidebar-logo">
+
+                    <div class="logo-icon">
+                        CC
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Capacity</strong>
+                        <span>Connect</span>
+                    </div>
+
+                </a>
+
+
+        <nav class="sidebar-nav">
+
+            <p class="nav-title">TRAINER PORTAL</p>
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item active">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">✓</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◉</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">2</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+            <button class="logout-btn" id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="dashboard-header">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="header-title">
+
+                <p class="header-label">
+                    TRAINER PORTAL
+                </p>
+
+                <h1>My Training Courses</h1>
+
+            </div>
+
+
+            <div class="header-profile">
+
+                <a href="profile.html" class="profile-mini">
+
+                    <div class="profile-avatar" id="headerAvatar">
+                        TR
+                    </div>
+
+                    <div class="profile-mini-info">
+
+                        <strong id="headerName">
+                            Trainer
+                        </strong>
+
+                        <span>Trainer</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE -->
+
+        <section class="trainer-courses-page">
+
+
+            <!-- INTRO -->
+
+            <div class="courses-intro">
+
+                <div>
+
+                    <span class="section-tag">
+                        TRAINING MANAGEMENT
+                    </span>
+
+                    <h2>
+                        My Training Courses
+                    </h2>
+
+                    <p>
+                        Manage your training programmes, learning modules,
+                        resources and trainee participation from one place.
+                    </p>
+
+                </div>
+
+
+                <a href="create-course.html" class="create-course-btn">
+                    <span>＋</span>
+                    Create Training
+                </a>
+
+            </div>
+
+
+            <!-- COURSE STATS -->
+
+            <div class="course-stats">
+
+                <div class="course-stat-card">
+
+                    <div class="stat-icon">
+                        ▣
+                    </div>
+
+                    <div>
+                        <strong>06</strong>
+                        <span>Total Courses</span>
+                    </div>
+
+                </div>
+
+
+                <div class="course-stat-card">
+
+                    <div class="stat-icon green">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>Published</span>
+                    </div>
+
+                </div>
+
+
+                <div class="course-stat-card">
+
+                    <div class="stat-icon orange">
+                        ◷
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Draft Courses</span>
+                    </div>
+
+                </div>
+
+
+                <div class="course-stat-card">
+
+                    <div class="stat-icon blue">
+                        ◯
+                    </div>
+
+                    <div>
+                        <strong>128</strong>
+                        <span>Trainees Enrolled</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTER BAR -->
+
+            <div class="course-toolbar">
+
+                <div class="course-search">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        id="courseSearch"
+                        placeholder="Search training courses..."
+                    >
+
+                </div>
+
+
+                <div class="course-filter">
+
+                    <select id="courseFilter">
+
+                        <option value="all">
+                            All Courses
+                        </option>
+
+                        <option value="published">
+                            Published
+                        </option>
+
+                        <option value="draft">
+                            Draft
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE LIST -->
+
+            <div class="courses-list" id="coursesList">
+
+
+                <!-- COURSE 1 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="published"
+                    data-title="Weather Observation Forecasting"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon weather">
+                            ☁
+                        </div>
+
+                        <span class="course-status published">
+                            Published
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            METEOROLOGICAL TRAINING
+                        </span>
+
+                        <h3>
+                            Weather Observation & Forecasting
+                        </h3>
+
+                        <p>
+                            Training programme covering weather observation,
+                            forecasting methods and operational meteorological
+                            competencies.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 06 Modules
+                            </span>
+
+                            <span>
+                                ◯ 42 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 12 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Average Completion
+                                </span>
+
+                                <strong>
+                                    78%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:78%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Updated 2 days ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Manage Course →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COURSE 2 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="published"
+                    data-title="Climate Risk Environmental Awareness"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon climate">
+                            ◌
+                        </div>
+
+                        <span class="course-status published">
+                            Published
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            CLIMATE & ENVIRONMENTAL STUDIES
+                        </span>
+
+                        <h3>
+                            Climate Risk & Environmental Awareness
+                        </h3>
+
+                        <p>
+                            Learning programme focused on climate risks,
+                            environmental awareness and organizational
+                            preparedness.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 07 Modules
+                            </span>
+
+                            <span>
+                                ◯ 31 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 14 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Average Completion
+                                </span>
+
+                                <strong>
+                                    64%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:64%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Updated 5 days ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Manage Course →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COURSE 3 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="published"
+                    data-title="Leadership Organizational Development"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon leadership">
+                            ◈
+                        </div>
+
+                        <span class="course-status published">
+                            Published
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            LEADERSHIP & MANAGEMENT
+                        </span>
+
+                        <h3>
+                            Leadership & Organizational Development
+                        </h3>
+
+                        <p>
+                            Capacity development programme focused on
+                            leadership competencies, team development and
+                            organizational effectiveness.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 06 Modules
+                            </span>
+
+                            <span>
+                                ◯ 28 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 10 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Average Completion
+                                </span>
+
+                                <strong>
+                                    71%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:71%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Updated 1 week ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Manage Course →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COURSE 4 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="published"
+                    data-title="Professional Communication Skills"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon professional">
+                            ✦
+                        </div>
+
+                        <span class="course-status published">
+                            Published
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            PROFESSIONAL SKILLS
+                        </span>
+
+                        <h3>
+                            Professional Communication Skills
+                        </h3>
+
+                        <p>
+                            Practical training focused on professional
+                            communication, workplace collaboration and
+                            presentation skills.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 06 Modules
+                            </span>
+
+                            <span>
+                                ◯ 27 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 08 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Average Completion
+                                </span>
+
+                                <strong>
+                                    84%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:84%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Updated 2 weeks ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Manage Course →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COURSE 5 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="draft"
+                    data-title="Technical Competency Development"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon technical">
+                            ◇
+                        </div>
+
+                        <span class="course-status draft">
+                            Draft
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            TECHNICAL COMPETENCIES
+                        </span>
+
+                        <h3>
+                            Technical Competency Development
+                        </h3>
+
+                        <p>
+                            Draft training programme for developing
+                            role-specific technical competencies and
+                            operational skills.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 05 Modules
+                            </span>
+
+                            <span>
+                                ◯ 0 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 09 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Course Progress
+                                </span>
+
+                                <strong>
+                                    46%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:46%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Saved 3 days ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Continue Editing →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- COURSE 6 -->
+
+                <article
+                    class="trainer-course-card"
+                    data-status="draft"
+                    data-title="Organizational Capacity Building"
+                >
+
+                    <div class="course-card-top">
+
+                        <div class="course-category-icon capacity">
+                            ◎
+                        </div>
+
+                        <span class="course-status draft">
+                            Draft
+                        </span>
+
+                    </div>
+
+
+                    <div class="course-card-content">
+
+                        <span class="course-category">
+                            ORGANIZATIONAL CAPACITY BUILDING
+                        </span>
+
+                        <h3>
+                            Organizational Capacity Building
+                        </h3>
+
+                        <p>
+                            Training framework designed to strengthen
+                            organizational capabilities, knowledge sharing
+                            and institutional development.
+                        </p>
+
+
+                        <div class="course-meta">
+
+                            <span>
+                                ◫ 08 Modules
+                            </span>
+
+                            <span>
+                                ◯ 0 Trainees
+                            </span>
+
+                            <span>
+                                ◷ 16 Hours
+                            </span>
+
+                        </div>
+
+
+                        <div class="course-completion">
+
+                            <div class="completion-label">
+
+                                <span>
+                                    Course Progress
+                                </span>
+
+                                <strong>
+                                    28%
+                                </strong>
+
+                            </div>
+
+                            <div class="completion-bar">
+                                <span style="width:28%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-card-footer">
+
+                        <span>
+                            Saved 1 week ago
+                        </span>
+
+                        <a href="create-course.html">
+                            Continue Editing →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- EMPTY STATE -->
+
+            <div class="courses-empty" id="coursesEmpty">
+
+                <div>
+                    ⌕
+                </div>
+
+                <h3>
+                    No training courses found
+                </h3>
+
+                <p>
+                    Try changing your search or course filter.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/trainer-courses.js"></script>
+
+</body>
+</html>
