@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Training | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/create-course.css">
+</head>
+
+<body class="trainer-create-page">
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-mark">CC</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+        <div class="sidebar-role">
+            <span class="role-dot"></span>
+            Trainer Portal
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item active">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">☑</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+            <div class="nav-divider"></div>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <button class="logout-btn" id="logoutBtn">
+                
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </div>
+
+            <div class="header-title">
+                <span>Trainer Portal</span>
+                <h1>Create Training</h1>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn" title="Notifications">
+                    ♢
+                    <span class="header-notification"></span>
+                </button>
+
+                <div class="header-user">
+
+                    <div class="header-avatar" id="headerAvatar">
+                        SK
+                    </div>
+
+                    <div class="header-user-info">
+                        <strong id="headerName">Trainer</strong>
+                        <span>Trainer</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="create-course-content">
+
+            <!-- PAGE INTRO -->
+            <div class="page-intro">
+
+                <div>
+                    <span class="section-label">TRAINING DEVELOPMENT</span>
+
+                    <h2>Create a New Training Course</h2>
+
+                    <p>
+                        Build a structured capacity development programme with
+                        modules, learning resources and subject-wise assessments.
+                    </p>
+                </div>
+
+                <a href="my-courses.html" class="back-link">
+                    ← Back to My Courses
+                </a>
+
+            </div>
+
+
+            <!-- STEP PROGRESS -->
+            <div class="creation-steps">
+
+                <div class="creation-step active">
+                    <div class="step-number">1</div>
+                    <div>
+                        <strong>Course Details</strong>
+                        <span>Basic information</span>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <strong>Modules</strong>
+                        <span>Training structure</span>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <strong>Resources</strong>
+                        <span>Learning materials</span>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <strong>Assessment</strong>
+                        <span>MCQ evaluation</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+            <div class="creation-grid">
+
+                <!-- LEFT -->
+                <div class="creation-main">
+
+                    <div class="form-card">
+
+                        <div class="card-heading">
+                            <div class="heading-icon">01</div>
+
+                            <div>
+                                <h3>Training Course Details</h3>
+                                <p>
+                                    Define the core information for your capacity
+                                    building programme.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="courseTitle">
+                                Training Course Title
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="courseTitle"
+                                placeholder="e.g. Weather Observation & Forecasting"
+                            >
+
+                            <small>
+                                Use a clear title that describes the training competency.
+                            </small>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="category">
+                                    Training Category
+                                    <span>*</span>
+                                </label>
+
+                                <select id="category">
+
+                                    <option value="">
+                                        Select training category
+                                    </option>
+
+                                    <option>
+                                        Meteorological Training
+                                    </option>
+
+                                    <option>
+                                        Climate & Environmental Studies
+                                    </option>
+
+                                    <option>
+                                        Technical Competencies
+                                    </option>
+
+                                    <option>
+                                        Professional Skills
+                                    </option>
+
+                                    <option>
+                                        Leadership & Management
+                                    </option>
+
+                                    <option>
+                                        Organizational Capacity Building
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="level">
+                                    Training Level
+                                    <span>*</span>
+                                </label>
+
+                                <select id="level">
+
+                                    <option value="">
+                                        Select level
+                                    </option>
+
+                                    <option>Foundation</option>
+                                    <option>Intermediate</option>
+                                    <option>Advanced</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="description">
+                                Training Description
+                                <span>*</span>
+                            </label>
+
+                            <textarea
+                                id="description"
+                                rows="6"
+                                placeholder="Describe the purpose, learning outcomes and competency areas covered in this training..."
+                            ></textarea>
+
+                            <div class="character-count">
+                                <span id="charCount">0</span> / 500 characters
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="duration">
+                                    Duration
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-unit">
+
+                                    <input
+                                        type="number"
+                                        id="duration"
+                                        placeholder="12"
+                                        min="1"
+                                    >
+
+                                    <span>Hours</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="modules">
+                                    Expected Modules
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="modules"
+                                    placeholder="6"
+                                    min="1"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMPETENCIES -->
+                    <div class="form-card">
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">02</div>
+
+                            <div>
+                                <h3>Competencies & Skills</h3>
+
+                                <p>
+                                    Identify the competencies trainees will develop
+                                    through this training.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="competency-options">
+
+                            <label class="competency-option">
+                                <input type="checkbox" value="technical">
+                                <span class="check-box"></span>
+
+                                <div>
+                                    <strong>Technical Competencies</strong>
+                                    <small>Domain-specific knowledge and technical capability</small>
+                                </div>
+                            </label>
+
+
+                            <label class="competency-option">
+                                <input type="checkbox" value="professional">
+                                <span class="check-box"></span>
+
+                                <div>
+                                    <strong>Professional Skills</strong>
+                                    <small>Communication, collaboration and workplace skills</small>
+                                </div>
+                            </label>
+
+
+                            <label class="competency-option">
+                                <input type="checkbox" value="leadership">
+                                <span class="check-box"></span>
+
+                                <div>
+                                    <strong>Leadership & Management</strong>
+                                    <small>Leadership, planning and organizational capabilities</small>
+                                </div>
+                            </label>
+
+
+                            <label class="competency-option">
+                                <input type="checkbox" value="environment">
+                                <span class="check-box"></span>
+
+                                <div>
+                                    <strong>Environmental Awareness</strong>
+                                    <small>Climate, environment and sustainability competencies</small>
+                                </div>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COURSE OUTCOMES -->
+                    <div class="form-card">
+
+                        <div class="card-heading">
+
+                            <div class="heading-icon">03</div>
+
+                            <div>
+                                <h3>Training Outcomes</h3>
+
+                                <p>
+                                    Define what trainees should be able to demonstrate
+                                    after completing the programme.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div id="outcomesContainer">
+
+                            <div class="outcome-row">
+
+                                <span>1</span>
+
+                                <input
+                                    type="text"
+                                    placeholder="Enter a measurable training outcome"
+                                >
+
+                                <button
+                                    type="button"
+                                    class="remove-outcome"
+                                >
+                                    ×
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="add-outcome-btn"
+                            id="addOutcomeBtn"
+                        >
+                            + Add Training Outcome
+                        </button>
+
+                    </div>
+
+
+                    <!-- ACTIONS -->
+                    <div class="form-actions">
+
+                        <button
+                            type="button"
+                            class="btn-secondary"
+                            id="saveDraftBtn"
+                        >
+                            Save as Draft
+                        </button>
+
+                        <button
+                            type="button"
+                            class="btn-primary"
+                            id="continueBtn"
+                        >
+                            Continue to Modules
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <aside class="creation-side">
+
+                    <!-- PREVIEW -->
+                    <div class="preview-card">
+
+                        <div class="preview-header">
+                            <div>
+                                <span>LIVE PREVIEW</span>
+                                <h3>Training Card</h3>
+                            </div>
+
+                            <div class="preview-dot"></div>
+                        </div>
+
+
+                        <div class="course-preview">
+
+                            <div class="preview-category">
+                                Training Course
+                            </div>
+
+                            <h3 id="previewTitle">
+                                Your training title
+                            </h3>
+
+                            <p id="previewDescription">
+                                Your training description will appear here.
+                            </p>
+
+
+                            <div class="preview-meta">
+
+                                <div>
+                                    <strong id="previewDuration">--</strong>
+                                    <span>Hours</span>
+                                </div>
+
+                                <div>
+                                    <strong id="previewModules">--</strong>
+                                    <span>Modules</span>
+                                </div>
+
+                                <div>
+                                    <strong>MCQ</strong>
+                                    <span>Assessment</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GUIDELINES -->
+                    <div class="guidelines-card">
+
+                        <div class="guideline-icon">
+                            ✦
+                        </div>
+
+                        <h3>Training Development Guidelines</h3>
+
+                        <ul>
+
+                            <li>
+                                Keep training outcomes measurable and competency-focused.
+                            </li>
+
+                            <li>
+                                Organize content into clear learning modules.
+                            </li>
+
+                            <li>
+                                Include relevant learning resources for each module.
+                            </li>
+
+                            <li>
+                                Add subject-wise MCQ assessments to evaluate participation.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- WORKFLOW -->
+                    <div class="workflow-card">
+
+                        <h3>Course Structure</h3>
+
+                        <div class="workflow-item active">
+                            <span>01</span>
+                            <div>
+                                <strong>Course Details</strong>
+                                <small>Basic training information</small>
+                            </div>
+                        </div>
+
+                        <div class="workflow-item">
+                            <span>02</span>
+                            <div>
+                                <strong>Modules</strong>
+                                <small>Structure your training</small>
+                            </div>
+                        </div>
+
+                        <div class="workflow-item">
+                            <span>03</span>
+                            <div>
+                                <strong>Learning Resources</strong>
+                                <small>Add presentations & materials</small>
+                            </div>
+                        </div>
+
+                        <div class="workflow-item">
+                            <span>04</span>
+                            <div>
+                                <strong>MCQ Assessment</strong>
+                                <small>Create knowledge evaluation</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/create-course.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,808 @@
+/* =========================================
+   CREATE TRAINING PAGE
+   CAPACITY CONNECT
+========================================= */
+
+.trainer-create-page,
+.trainer-create-page * {
+    box-sizing: border-box;
+}
+
+.create-course-content {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 30px 32px 50px;
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.page-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #7657d9;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    margin-bottom: 7px;
+}
+
+.page-intro h2 {
+    margin: 0 0 8px;
+    color: #242033;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.page-intro p {
+    max-width: 680px;
+    margin: 0;
+    color: #77738a;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.back-link {
+    flex-shrink: 0;
+    text-decoration: none;
+    color: #6750c9;
+    background: #f4f0ff;
+    border: 1px solid #e5ddff;
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    background: #ebe4ff;
+}
+
+
+/* =========================================
+   CREATION STEPS
+========================================= */
+
+.creation-steps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    background: #ffffff;
+    border: 1px solid #ece9f4;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(46, 35, 80, 0.04);
+}
+
+.creation-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: max-content;
+}
+
+.step-number {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0edf6;
+    color: #8d8998;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.creation-step.active .step-number {
+    background: #7357d9;
+    color: #ffffff;
+}
+
+.creation-step strong {
+    display: block;
+    color: #34303e;
+    font-size: 12px;
+}
+
+.creation-step span {
+    display: block;
+    margin-top: 2px;
+    color: #9893a3;
+    font-size: 10px;
+}
+
+.step-line {
+    flex: 1;
+    height: 1px;
+    min-width: 20px;
+    margin: 0 16px;
+    background: #e8e4ef;
+}
+
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.creation-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 24px;
+    align-items: start;
+}
+
+.creation-main {
+    min-width: 0;
+}
+
+.creation-side {
+    min-width: 0;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    background: #ffffff;
+    border: 1px solid #ece9f4;
+    border-radius: 17px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 22px rgba(47, 38, 76, 0.04);
+}
+
+.card-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 25px;
+}
+
+.heading-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0ebff;
+    color: #7256d4;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.card-heading h3 {
+    margin: 0 0 4px;
+    color: #2e2a39;
+    font-size: 16px;
+}
+
+.card-heading p {
+    margin: 0;
+    color: #858091;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #393542;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: #d35b75;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #e2dfea;
+    border-radius: 10px;
+    outline: none;
+    background: #ffffff;
+    color: #302c3a;
+    font-family: inherit;
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 44px;
+    padding: 0 13px;
+}
+
+.form-group textarea {
+    padding: 13px;
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #8b73e5;
+    box-shadow: 0 0 0 3px rgba(115, 87, 217, 0.09);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa5b3;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 6px;
+    color: #9a96a3;
+    font-size: 10px;
+}
+
+.character-count {
+    margin-top: 5px;
+    text-align: right;
+    color: #a19ca9;
+    font-size: 10px;
+}
+
+.input-with-unit {
+    position: relative;
+}
+
+.input-with-unit input {
+    padding-right: 60px;
+}
+
+.input-with-unit span {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    color: #918c9b;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   COMPETENCIES
+========================================= */
+
+.competency-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.competency-option {
+    position: relative;
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    padding: 14px;
+    border: 1px solid #e9e5f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.competency-option:hover {
+    border-color: #cfc3f4;
+    background: #fbfaff;
+}
+
+.competency-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.check-box {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    border: 1.5px solid #d5cfdf;
+    border-radius: 5px;
+    margin-top: 1px;
+    position: relative;
+}
+
+.competency-option input:checked + .check-box {
+    background: #7357d9;
+    border-color: #7357d9;
+}
+
+.competency-option input:checked + .check-box::after {
+    content: "✓";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.competency-option strong {
+    display: block;
+    color: #373341;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.competency-option small {
+    display: block;
+    color: #9994a3;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   OUTCOMES
+========================================= */
+
+.outcome-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 10px;
+}
+
+.outcome-row > span {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2eeff;
+    color: #7357d9;
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.outcome-row input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #e2dfea;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.outcome-row input:focus {
+    border-color: #8b73e5;
+}
+
+.remove-outcome {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border: 0;
+    background: #fff0f3;
+    color: #c85d77;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.add-outcome-btn {
+    border: 0;
+    background: transparent;
+    color: #7357d9;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+
+/* =========================================
+   PREVIEW
+========================================= */
+
+.preview-card,
+.guidelines-card,
+.workflow-card {
+    background: #ffffff;
+    border: 1px solid #ece9f4;
+    border-radius: 17px;
+    box-shadow: 0 6px 22px rgba(47, 38, 76, 0.04);
+}
+
+.preview-card {
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 18px;
+    border-bottom: 1px solid #eeeaf4;
+}
+
+.preview-header span {
+    color: #9b96a6;
+    font-size: 9px;
+    letter-spacing: 1.1px;
+    font-weight: 800;
+}
+
+.preview-header h3 {
+    margin: 3px 0 0;
+    color: #34303d;
+    font-size: 14px;
+}
+
+.preview-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #72c98d;
+}
+
+.course-preview {
+    padding: 20px;
+}
+
+.preview-category {
+    display: inline-block;
+    padding: 5px 8px;
+    background: #f1edff;
+    color: #7357d9;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.course-preview h3 {
+    margin: 13px 0 8px;
+    color: #2f2b39;
+    font-size: 17px;
+    line-height: 1.35;
+}
+
+.course-preview p {
+    min-height: 50px;
+    margin: 0 0 20px;
+    color: #8d8898;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.preview-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeaf4;
+}
+
+.preview-meta div {
+    text-align: center;
+}
+
+.preview-meta strong {
+    display: block;
+    color: #423b55;
+    font-size: 13px;
+}
+
+.preview-meta span {
+    display: block;
+    margin-top: 3px;
+    color: #9c97a5;
+    font-size: 9px;
+}
+
+
+/* =========================================
+   GUIDELINES
+========================================= */
+
+.guidelines-card {
+    padding: 20px;
+    margin-bottom: 18px;
+    background: linear-gradient(145deg, #f7f3ff, #ffffff);
+}
+
+.guideline-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: #e9e1ff;
+    color: #7357d9;
+    margin-bottom: 12px;
+}
+
+.guidelines-card h3 {
+    margin: 0 0 13px;
+    color: #393442;
+    font-size: 14px;
+}
+
+.guidelines-card ul {
+    margin: 0;
+    padding-left: 17px;
+}
+
+.guidelines-card li {
+    margin-bottom: 9px;
+    color: #777281;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   WORKFLOW
+========================================= */
+
+.workflow-card {
+    padding: 20px;
+}
+
+.workflow-card h3 {
+    margin: 0 0 15px;
+    color: #383341;
+    font-size: 14px;
+}
+
+.workflow-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 11px 0;
+    border-bottom: 1px solid #f0edf4;
+}
+
+.workflow-item:last-child {
+    border-bottom: 0;
+}
+
+.workflow-item > span {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #f3f0f6;
+    color: #96909f;
+    border-radius: 7px;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.workflow-item.active > span {
+    background: #7357d9;
+    color: #ffffff;
+}
+
+.workflow-item strong {
+    display: block;
+    color: #494452;
+    font-size: 11px;
+}
+
+.workflow-item small {
+    display: block;
+    margin-top: 2px;
+    color: #a09ba8;
+    font-size: 9px;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 3px;
+}
+
+.btn-secondary,
+.btn-primary {
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    border: 1px solid #ded8e9;
+    color: #6d6878;
+}
+
+.btn-secondary:hover {
+    background: #f7f4fb;
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #7357d9;
+    border: 1px solid #7357d9;
+    color: #ffffff;
+    box-shadow: 0 7px 18px rgba(115, 87, 217, 0.2);
+}
+
+.btn-primary:hover {
+    background: #6549ca;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MOBILE SIDEBAR
+========================================= */
+
+.mobile-menu-btn {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .creation-grid {
+        grid-template-columns: minmax(0, 1fr) 290px;
+    }
+
+    .creation-step span {
+        display: none;
+    }
+
+    .step-line {
+        margin: 0 10px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .creation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .creation-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .preview-card,
+    .guidelines-card,
+    .workflow-card {
+        margin-bottom: 0;
+    }
+
+    .workflow-card {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .create-course-content {
+        padding: 22px 16px 40px;
+    }
+
+    .page-intro {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .page-intro h2 {
+        font-size: 24px;
+    }
+
+    .creation-steps {
+        overflow-x: auto;
+        padding: 15px;
+    }
+
+    .creation-step {
+        min-width: 125px;
+    }
+
+    .step-line {
+        min-width: 25px;
+    }
+
+    .form-row,
+    .competency-options {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 20px 16px;
+    }
+
+    .creation-side {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-card {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn-secondary,
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .outcome-row {
+        align-items: flex-start;
+    }
+
+    .outcome-row input {
+        min-width: 0;
+    }
+}
