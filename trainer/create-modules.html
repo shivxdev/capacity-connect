@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Modules | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/create-modules.css">
+</head>
+
+<body class="trainer-modules-page">
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-mark">CC</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+        <div class="sidebar-role">
+            <span class="role-dot"></span>
+            Trainer Portal
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item active">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">☑</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+            <div class="nav-divider"></div>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-support">
+                <div class="support-icon">?</div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Trainer Support</span>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </div>
+
+            <div class="header-title">
+                <span>Training Development</span>
+                <h1>Create Modules</h1>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn">
+                    ♢
+                    <span class="header-notification"></span>
+                </button>
+
+                <div class="header-user">
+
+                    <div class="header-avatar" id="headerAvatar">
+                        TR
+                    </div>
+
+                    <div class="header-user-info">
+                        <strong id="headerName">Trainer</strong>
+                        <span>Trainer</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="modules-content">
+
+            <!-- INTRO -->
+            <div class="modules-intro">
+
+                <div>
+
+                    <span class="section-label">
+                        STEP 02 · TRAINING STRUCTURE
+                    </span>
+
+                    <h2>Build Your Training Modules</h2>
+
+                    <p>
+                        Organize your training course into structured modules
+                        and define the learning focus for each stage.
+                    </p>
+
+                </div>
+
+                <a href="create-course.html" class="back-link">
+                    ← Course Details
+                </a>
+
+            </div>
+
+
+            <!-- STEPS -->
+            <div class="creation-steps">
+
+                <div class="creation-step completed">
+                    <div class="step-number">✓</div>
+
+                    <div>
+                        <strong>Course Details</strong>
+                        <span>Basic information</span>
+                    </div>
+                </div>
+
+                <div class="step-line active"></div>
+
+                <div class="creation-step active">
+                    <div class="step-number">2</div>
+
+                    <div>
+                        <strong>Modules</strong>
+                        <span>Training structure</span>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+                    <div class="step-number">3</div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <span>Learning materials</span>
+                    </div>
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+                    <div class="step-number">4</div>
+
+                    <div>
+                        <strong>Assessment</strong>
+                        <span>MCQ evaluation</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- COURSE SUMMARY -->
+            <div class="course-summary">
+
+                <div class="summary-icon">CC</div>
+
+                <div class="summary-content">
+
+                    <span>TRAINING COURSE</span>
+
+                    <h3 id="courseTitle">
+                        Weather Observation & Forecasting
+                    </h3>
+
+                    <p id="courseCategory">
+                        Meteorological Training
+                    </p>
+
+                </div>
+
+                <div class="summary-stat">
+                    <strong id="moduleCount">0</strong>
+                    <span>Modules</span>
+                </div>
+
+            </div>
+
+
+            <!-- MODULE BUILDER -->
+            <div class="builder-layout">
+
+                <!-- LEFT -->
+                <div class="modules-builder">
+
+                    <div class="builder-header">
+
+                        <div>
+                            <h3>Training Modules</h3>
+
+                            <p>
+                                Create modules in the sequence trainees
+                                will follow during the training.
+                            </p>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="add-module-btn"
+                            id="addModuleBtn"
+                        >
+                            + Add Module
+                        </button>
+
+                    </div>
+
+
+                    <!-- MODULES -->
+                    <div id="modulesContainer">
+
+                        <!-- MODULE 1 -->
+                        <div class="module-card">
+
+                            <div class="module-top">
+
+                                <div class="module-number">
+                                    01
+                                </div>
+
+                                <div class="module-title-area">
+
+                                    <input
+                                        type="text"
+                                        class="module-title"
+                                        value="Introduction to Weather Observation"
+                                        placeholder="Enter module title"
+                                    >
+
+                                    <span>
+                                        Module title
+                                    </span>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="delete-module"
+                                    title="Delete module"
+                                >
+                                    ×
+                                </button>
+
+                            </div>
+
+
+                            <div class="module-fields">
+
+                                <div class="module-field">
+
+                                    <label>
+                                        Module Description
+                                    </label>
+
+                                    <textarea
+                                        class="module-description"
+                                        rows="4"
+                                        placeholder="Describe what this module covers..."
+                                    >Introduction to weather observation, instruments and basic atmospheric measurements.</textarea>
+
+                                </div>
+
+
+                                <div class="module-field-row">
+
+                                    <div class="module-field">
+
+                                        <label>
+                                            Estimated Duration
+                                        </label>
+
+                                        <div class="duration-input">
+
+                                            <input
+                                                type="number"
+                                                class="module-duration"
+                                                value="2"
+                                                min="1"
+                                            >
+
+                                            <span>Hours</span>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="module-field">
+
+                                        <label>
+                                            Learning Focus
+                                        </label>
+
+                                        <select class="module-focus">
+
+                                            <option>
+                                                Technical Competency
+                                            </option>
+
+                                            <option>
+                                                Professional Skill
+                                            </option>
+
+                                            <option>
+                                                Leadership & Management
+                                            </option>
+
+                                            <option>
+                                                Environmental Awareness
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- RESOURCES -->
+                            <div class="module-resources">
+
+                                <div class="resources-header">
+
+                                    <div>
+                                        <strong>
+                                            Learning Resources
+                                        </strong>
+
+                                        <span>
+                                            Add presentations, study materials or recorded lectures.
+                                        </span>
+                                    </div>
+
+                                    <button
+                                        type="button"
+                                        class="add-resource-btn"
+                                    >
+                                        + Add Resource
+                                    </button>
+
+                                </div>
+
+
+                                <div class="resource-list">
+
+                                    <div class="resource-item">
+
+                                        <div class="resource-icon">
+                                            PDF
+                                        </div>
+
+                                        <div class="resource-info">
+
+                                            <strong>
+                                                Weather Observation Study Material
+                                            </strong>
+
+                                            <span>
+                                                Presentation & Study Material
+                                            </span>
+
+                                        </div>
+
+                                        <button
+                                            type="button"
+                                            class="remove-resource"
+                                        >
+                                            ×
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ADD MODULE -->
+                    <button
+                        type="button"
+                        class="large-add-module"
+                        id="largeAddModule"
+                    >
+                        <span>＋</span>
+
+                        <div>
+                            <strong>Add Another Training Module</strong>
+                            <small>
+                                Continue building your capacity development structure
+                            </small>
+                        </div>
+
+                    </button>
+
+
+                    <!-- ACTIONS -->
+                    <div class="builder-actions">
+
+                        <button
+                            type="button"
+                            class="save-draft-btn"
+                            id="saveDraftBtn"
+                        >
+                            Save as Draft
+                        </button>
+
+                        <button
+                            type="button"
+                            class="continue-btn"
+                            id="continueBtn"
+                        >
+                            Continue to Resources
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <aside class="module-side">
+
+                    <!-- STRUCTURE -->
+                    <div class="structure-card">
+
+                        <div class="side-card-header">
+
+                            <span>
+                                COURSE STRUCTURE
+                            </span>
+
+                            <div class="status-dot"></div>
+
+                        </div>
+
+                        <h3>Your Training Flow</h3>
+
+                        <div class="structure-list">
+
+                            <div class="structure-item completed">
+
+                                <div class="structure-number">
+                                    ✓
+                                </div>
+
+                                <div>
+                                    <strong>Course Details</strong>
+                                    <span>Completed</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="structure-item active">
+
+                                <div class="structure-number">
+                                    02
+                                </div>
+
+                                <div>
+                                    <strong>Training Modules</strong>
+                                    <span>Current step</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="structure-item">
+
+                                <div class="structure-number">
+                                    03
+                                </div>
+
+                                <div>
+                                    <strong>Learning Resources</strong>
+                                    <span>Next step</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="structure-item">
+
+                                <div class="structure-number">
+                                    04
+                                </div>
+
+                                <div>
+                                    <strong>MCQ Assessment</strong>
+                                    <span>Final step</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TIPS -->
+                    <div class="module-tip">
+
+                        <div class="tip-icon">
+                            ✦
+                        </div>
+
+                        <h3>Module Development Tips</h3>
+
+                        <ul>
+
+                            <li>
+                                Keep each module focused on one competency area.
+                            </li>
+
+                            <li>
+                                Use clear and measurable learning objectives.
+                            </li>
+
+                            <li>
+                                Keep module duration realistic for trainees.
+                            </li>
+
+                            <li>
+                                Add relevant learning resources to support each module.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- MODULE COUNT -->
+                    <div class="module-counter">
+
+                        <span>MODULES CREATED</span>
+
+                        <strong id="sideModuleCount">
+                            1
+                        </strong>
+
+                        <p>
+                            You can add more modules before continuing.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/create-modules.js"></script>
+
+</body>
+</html>
