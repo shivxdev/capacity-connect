@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning Resources | Capacity Connect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/trainer-library.css">
+</head>
+
+<body class="trainer-library-page">
+
+<div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="dashboard-sidebar" id="sidebar">
+
+        <div class="sidebar-logo">
+            <div class="logo-mark">CC</div>
+
+            <div>
+                <h2>Capacity</h2>
+                <span>Connect</span>
+            </div>
+        </div>
+
+        <div class="sidebar-role">
+            <span class="role-dot"></span>
+            Trainer Portal
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="my-courses.html" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>My Training Courses</span>
+            </a>
+
+            <a href="create-course.html" class="nav-item active">
+                <span class="nav-icon">＋</span>
+                <span>Create Training</span>
+            </a>
+
+            <a href="questionnaire.html" class="nav-item">
+                <span class="nav-icon">☑</span>
+                <span>Questionnaire</span>
+            </a>
+
+            <a href="trainees.html" class="nav-item">
+                <span class="nav-icon">♙</span>
+                <span>Trainees</span>
+            </a>
+
+            <a href="trainer-library.html" class="nav-item">
+                <span class="nav-icon">▤</span>
+                <span>Resource Library</span>
+            </a>
+
+            <div class="nav-divider"></div>
+
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">◯</span>
+                <span>My Profile</span>
+            </a>
+
+            <a href="notifications.html" class="nav-item">
+                <span class="nav-icon">♢</span>
+                <span>Notifications</span>
+                <span class="notification-badge">3</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-support">
+                <div class="support-icon">?</div>
+
+                <div>
+                    <strong>Need Help?</strong>
+                    <span>Trainer Support</span>
+                </div>
+            </div>
+
+            <button class="logout-btn" id="logoutBtn">
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="dashboard-main">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </div>
+
+            <div class="header-title">
+                <span>Training Development</span>
+                <h1>Learning Resources</h1>
+            </div>
+
+            <div class="header-actions">
+
+                <button class="header-icon-btn">
+                    ♢
+                    <span class="header-notification"></span>
+                </button>
+
+                <div class="header-user">
+
+                    <div class="header-avatar" id="headerAvatar">
+                        TR
+                    </div>
+
+                    <div class="header-user-info">
+                        <strong id="headerName">Trainer</strong>
+                        <span>Trainer</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="library-content">
+
+            <!-- INTRO -->
+            <div class="library-intro">
+
+                <div>
+
+                    <span class="section-label">
+                        STEP 03 · LEARNING MATERIALS
+                    </span>
+
+                    <h2>Manage Learning Resources</h2>
+
+                    <p>
+                        Add structured learning resources to support
+                        trainees throughout the training programme.
+                    </p>
+
+                </div>
+
+                <a href="create-modules.html" class="back-link">
+                    ← Back to Modules
+                </a>
+
+            </div>
+
+
+            <!-- STEPS -->
+            <div class="creation-steps">
+
+                <div class="creation-step completed">
+
+                    <div class="step-number">✓</div>
+
+                    <div>
+                        <strong>Course Details</strong>
+                        <span>Basic information</span>
+                    </div>
+
+                </div>
+
+                <div class="step-line active"></div>
+
+                <div class="creation-step completed">
+
+                    <div class="step-number">✓</div>
+
+                    <div>
+                        <strong>Modules</strong>
+                        <span>Training structure</span>
+                    </div>
+
+                </div>
+
+                <div class="step-line active"></div>
+
+                <div class="creation-step active">
+
+                    <div class="step-number">3</div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <span>Learning materials</span>
+                    </div>
+
+                </div>
+
+                <div class="step-line"></div>
+
+                <div class="creation-step">
+
+                    <div class="step-number">4</div>
+
+                    <div>
+                        <strong>Assessment</strong>
+                        <span>MCQ evaluation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- COURSE HEADER -->
+            <div class="course-resource-header">
+
+                <div class="course-resource-info">
+
+                    <div class="course-icon">
+                        CC
+                    </div>
+
+                    <div>
+
+                        <span>TRAINING COURSE</span>
+
+                        <h3 id="courseTitle">
+                            Weather Observation & Forecasting
+                        </h3>
+
+                        <p id="courseCategory">
+                            Meteorological Training
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="resource-stats">
+
+                    <div>
+                        <strong id="totalResources">0</strong>
+                        <span>Resources</span>
+                    </div>
+
+                    <div>
+                        <strong id="totalModules">0</strong>
+                        <span>Modules</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOOLBAR -->
+            <div class="resource-toolbar">
+
+                <div class="toolbar-search">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        id="resourceSearch"
+                        placeholder="Search learning resources..."
+                    >
+
+                </div>
+
+                <select id="resourceFilter">
+
+                    <option value="all">
+                        All Resource Types
+                    </option>
+
+                    <option value="presentation">
+                        Presentations
+                    </option>
+
+                    <option value="recorded">
+                        Recorded Lectures
+                    </option>
+
+                    <option value="document">
+                        Study Materials
+                    </option>
+
+                    <option value="reference">
+                        Reference Documents
+                    </option>
+
+                </select>
+
+                <button
+                    type="button"
+                    class="add-resource-main"
+                    id="addResourceBtn"
+                >
+                    + Add Resource
+                </button>
+
+            </div>
+
+
+            <!-- RESOURCE AREA -->
+            <div class="resource-layout">
+
+                <!-- MAIN RESOURCE LIST -->
+                <div class="resource-main">
+
+                    <div class="resource-section-title">
+
+                        <div>
+                            <h3>Training Resources</h3>
+
+                            <p>
+                                Organize materials according to each training module.
+                            </p>
+                        </div>
+
+                        <span id="resourceCountLabel">
+                            0 resources
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        class="resource-grid"
+                        id="resourceGrid"
+                    >
+
+                        <!-- RESOURCE CARD -->
+                        <article
+                            class="resource-card"
+                            data-type="document"
+                            data-title="Weather Observation Study Material"
+                        >
+
+                            <div class="resource-card-top">
+
+                                <div class="resource-type-icon document">
+                                    PDF
+                                </div>
+
+                                <span class="resource-type">
+                                    Study Material
+                                </span>
+
+                                <button class="resource-menu">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+                            <h4>
+                                Weather Observation Study Material
+                            </h4>
+
+                            <p>
+                                Fundamentals of weather observation,
+                                instruments and atmospheric measurements.
+                            </p>
+
+                            <div class="resource-meta">
+
+                                <span>
+                                    Module 01
+                                </span>
+
+                                <span>
+                                    2.4 MB
+                                </span>
+
+                            </div>
+
+                            <div class="resource-footer">
+
+                                <span class="resource-status">
+                                    Available
+                                </span>
+
+                                <button class="resource-action">
+                                    View Resource
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- RESOURCE CARD -->
+                        <article
+                            class="resource-card"
+                            data-type="presentation"
+                            data-title="Forecasting Methods Presentation"
+                        >
+
+                            <div class="resource-card-top">
+
+                                <div class="resource-type-icon presentation">
+                                    PPT
+                                </div>
+
+                                <span class="resource-type">
+                                    Presentation
+                                </span>
+
+                                <button class="resource-menu">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+                            <h4>
+                                Forecasting Methods Presentation
+                            </h4>
+
+                            <p>
+                                Presentation covering forecasting methods,
+                                observations and interpretation techniques.
+                            </p>
+
+                            <div class="resource-meta">
+
+                                <span>
+                                    Module 04
+                                </span>
+
+                                <span>
+                                    4.1 MB
+                                </span>
+
+                            </div>
+
+                            <div class="resource-footer">
+
+                                <span class="resource-status">
+                                    Available
+                                </span>
+
+                                <button class="resource-action">
+                                    View Resource
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- RESOURCE CARD -->
+                        <article
+                            class="resource-card"
+                            data-type="recorded"
+                            data-title="Introduction to Weather Observation Lecture"
+                        >
+
+                            <div class="resource-card-top">
+
+                                <div class="resource-type-icon recorded">
+                                    ▶
+                                </div>
+
+                                <span class="resource-type">
+                                    Recorded Lecture
+                                </span>
+
+                                <button class="resource-menu">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+                            <h4>
+                                Introduction to Weather Observation
+                            </h4>
+
+                            <p>
+                                Recorded lecture explaining observation
+                                procedures and essential instruments.
+                            </p>
+
+                            <div class="resource-meta">
+
+                                <span>
+                                    Module 01
+                                </span>
+
+                                <span>
+                                    18 min
+                                </span>
+
+                            </div>
+
+                            <div class="resource-footer">
+
+                                <span class="resource-status">
+                                    Available
+                                </span>
+
+                                <button class="resource-action">
+                                    Watch Lecture
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- RESOURCE CARD -->
+                        <article
+                            class="resource-card"
+                            data-type="reference"
+                            data-title="Meteorological Reference Guide"
+                        >
+
+                            <div class="resource-card-top">
+
+                                <div class="resource-type-icon reference">
+                                    DOC
+                                </div>
+
+                                <span class="resource-type">
+                                    Reference Document
+                                </span>
+
+                                <button class="resource-menu">
+                                    ⋮
+                                </button>
+
+                            </div>
+
+                            <h4>
+                                Meteorological Reference Guide
+                            </h4>
+
+                            <p>
+                                Supporting reference material for
+                                meteorological training and competency development.
+                            </p>
+
+                            <div class="resource-meta">
+
+                                <span>
+                                    Module 02
+                                </span>
+
+                                <span>
+                                    1.8 MB
+                                </span>
+
+                            </div>
+
+                            <div class="resource-footer">
+
+                                <span class="resource-status">
+                                    Available
+                                </span>
+
+                                <button class="resource-action">
+                                    View Resource
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- EMPTY -->
+                    <div
+                        class="empty-resource"
+                        id="emptyResource"
+                    >
+
+                        <div class="empty-icon">
+                            ◇
+                        </div>
+
+                        <h3>No Resources Found</h3>
+
+                        <p>
+                            Try another search or resource type.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <aside class="resource-side">
+
+                    <div class="module-list-card">
+
+                        <div class="side-label">
+                            COURSE MODULES
+                        </div>
+
+                        <h3>Resource Distribution</h3>
+
+                        <p class="side-description">
+                            Select a module to review its learning resources.
+                        </p>
+
+                        <div
+                            class="module-list"
+                            id="moduleList"
+                        >
+
+                            <button
+                                class="module-list-item active"
+                                data-module="1"
+                            >
+
+                                <span class="module-list-number">
+                                    01
+                                </span>
+
+                                <span class="module-list-info">
+
+                                    <strong>
+                                        Weather Observation
+                                    </strong>
+
+                                    <small>
+                                        2 resources
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="module-list-item"
+                                data-module="2"
+                            >
+
+                                <span class="module-list-number">
+                                    02
+                                </span>
+
+                                <span class="module-list-info">
+
+                                    <strong>
+                                        Atmospheric Measurements
+                                    </strong>
+
+                                    <small>
+                                        1 resource
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="module-list-item"
+                                data-module="3"
+                            >
+
+                                <span class="module-list-number">
+                                    03
+                                </span>
+
+                                <span class="module-list-info">
+
+                                    <strong>
+                                        Forecasting Fundamentals
+                                    </strong>
+
+                                    <small>
+                                        0 resources
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+
+                            <button
+                                class="module-list-item"
+                                data-module="4"
+                            >
+
+                                <span class="module-list-number">
+                                    04
+                                </span>
+
+                                <span class="module-list-info">
+
+                                    <strong>
+                                        Forecasting Methods
+                                    </strong>
+
+                                    <small>
+                                        1 resource
+                                    </small>
+
+                                </span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="resource-tip">
+
+                        <div class="tip-icon">
+                            ✦
+                        </div>
+
+                        <h3>Resource Guidelines</h3>
+
+                        <ul>
+
+                            <li>
+                                Use clear titles that describe the resource.
+                            </li>
+
+                            <li>
+                                Connect each resource to the appropriate module.
+                            </li>
+
+                            <li>
+                                Use recorded lectures for practical demonstrations.
+                            </li>
+
+                            <li>
+                                Add presentations and study materials for revision.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="resource-progress">
+
+                        <span>
+                            COURSE BUILD PROGRESS
+                        </span>
+
+                        <strong>
+                            75%
+                        </strong>
+
+                        <div class="progress-track">
+                            <div class="progress-fill"></div>
+                        </div>
+
+                        <p>
+                            Next: Create the subject-wise MCQ assessment.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+
+            <!-- BOTTOM ACTIONS -->
+            <div class="library-actions">
+
+                <button
+                    type="button"
+                    class="save-draft-btn"
+                    id="saveDraftBtn"
+                >
+                    Save as Draft
+                </button>
+
+                <button
+                    type="button"
+                    class="continue-btn"
+                    id="continueBtn"
+                >
+                    Continue to Assessment
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/trainer-library.js"></script>
+
+</body>
+</html>
